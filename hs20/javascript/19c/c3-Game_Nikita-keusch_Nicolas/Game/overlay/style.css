@@ -1,0 +1,96 @@
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.player {
+  position: absolute;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+
+.player-putin {
+  position: absolute;
+  margin-left: 2vw;
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+
+.player-biden {
+  position: absolute;
+  margin-left: 2vw;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+.player-trump {
+  position: absolute;
+  margin-left: 2vw;
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+}
+
+.player-diener {
+  position: absolute;
+  margin-left: 2vw;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.player-merkel {
+  position: absolute;
+  margin-left: 2vw;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+
+.player1 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+.player2 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+.player3 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+.player4 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+.player5 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+.none {
+  display: none;
+}

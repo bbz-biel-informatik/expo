@@ -1,0 +1,295 @@
+/* Allgemein *****************************************************/
+html{
+    height: 100%;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0px;
+    height: 100%;
+}
+
+.wrapper{
+    position: relative;
+    min-height: 100%;
+}
+
+h3 {
+    margin: 0px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: relation-one,sans-serif;
+    font-weight: 400;
+    font-size: 6vw;
+    color: #292b31;
+}
+
+@media (max-width: 650px){
+    h3{
+        font-size: 15vw;
+    }
+}
+
+.text{
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+    
+.text p{
+    margin-top: 2%;
+    font-size: 18px;
+}
+
+/* HEADER *****************************************************/
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+#logo{
+    width: 60px;
+    margin-left: 5%
+}
+  
+#logo:hover{
+    opacity: 0.5;
+}
+  
+#logo img{
+    width: 100%;
+}
+
+#main_nav{
+    display: flex;
+}
+ 
+header nav a{
+    font-family: relation-one,sans-serif;
+    font-size: 2.5vw;
+    text-decoration:  none;
+    color: #292b31;
+    margin-right: 2vw;
+    padding: 1vw;
+}
+
+header nav a:hover{
+    padding-top: 5px;
+}
+
+@media (max-width: 1000px) {
+    header nav a{
+        font-size: 4.5vw;
+    }
+}
+
+/* Home *****************************************************/
+/* Parallax *****************************************************/
+#parallax{
+    background-image: url("img/Lara1a.png");
+    height: 850px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 650px){
+    #parallax{
+        height: 700px;
+        background-image: url("img/Lara1b.png");
+    }
+}
+
+#name{
+    text-align: right;
+    color: whitesmoke;
+    padding-right: 10%;
+    padding-top: 300px;
+    font-family: relation-one,sans-serif;
+    font-weight: 400;
+    font-size: 5vw;
+}
+
+#name h1{
+    margin: 0px;
+}
+
+/* Photo Galery *****************************************************/
+#photo_galery{
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+    padding-bottom: 90px;
+}
+
+#photo_galery div{
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
+}
+
+#photo_galery div img{
+    width: 100%;
+    height: auto;
+}
+
+/* Ausbildung *****************************************************/
+/* Boxen *****************************************************/
+#ausbildung{
+    padding: 10%
+}
+
+#bereiche{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.rahmen{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 12px;
+    margin: 5px;
+    height: 100%;
+    width: 350px;
+    background-color: #292b31;
+    color: whitesmoke;
+    font-size: 18px;
+    box-shadow: 20px 10px 15px rgb(58, 58, 58);
+}
+
+.rahmen img{
+    width: 100px;
+    height: 100px;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 100%;
+}
+
+#weiteres{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-bottom: 90px;
+}
+
+#weiteres div{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 12px;
+    margin: 20px;
+    height: 100%;
+    width: 80%; 
+}
+
+/* Über Mich *****************************************************/
+/* Parallax2 *****************************************************/
+#parallax2{
+    background-image: url("img/Lara2a.png");
+    height: 850px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 650px){
+    #parallax2{
+        height: 700px;
+        background-image: url("img/Lara2b.png");
+    }
+}
+
+/* Playlist *****************************************************/
+iframe{
+    padding-bottom: 90px;
+}
+
+/* Kontakt *****************************************************/
+/* Kontaktformular *****************************************************/
+#kontaktformular{
+    padding: 10%;
+    padding-bottom: 100px;
+}
+
+form input, textarea{
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: #292b31;
+    font-family: Arial, Helvetica, sans-serif
+}
+  
+form input:first-child{
+    margin-top: 10px;
+}
+  
+form input{
+    width: 100%;
+    height: 30px;
+}
+  
+form textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+  
+.input_text{
+    box-sizing: border-box;
+    color: #292b31;
+    padding-left: 10px;
+}
+  
+.button {
+    background-color: whitesmoke;
+    color: #292b31;
+    width: 100%;
+    height: 50px;
+}
+  
+.button:hover{
+    background-color: #292b31;
+    color: #f0f0f0;
+}
+
+/* FOOTER *****************************************************/
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #292b31;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 15px;
+    color: whitesmoke;
+}

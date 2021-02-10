@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds n‘ Bombs</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="shortcut icon" href="Graphics/favicon.png" />
+</head>
+
+<body>
+
+    <p class="punkte">0</p>
+        
+    <div class="overlay" id="overlay">
+        <img src="graphics/title.png" alt="title" class="title">
+        <div class="player1" id="1"></div>
+        <div class="player2" id="2"></div>
+        <div class="player3" id="3"></div>
+        <div class="player4" id="4"></div>
+        <div class="player5" id="5"></div>
+        </div>
+    <div class="none" id="go-overlay">
+        <img src="graphics/gameover.png" alt="title" class="gameovertitle">
+        <button class="refresh-button">Try again</button>
+        </div>
+
+    <div class="playground">
+        <div class="player"></div>
+   </div>    
+   <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+
+    <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>

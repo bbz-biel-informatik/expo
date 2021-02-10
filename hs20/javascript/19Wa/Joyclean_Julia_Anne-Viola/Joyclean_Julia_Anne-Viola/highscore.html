@@ -1,0 +1,36 @@
+<html>
+<head>
+	<link rel="stylesheet" href="joyclean.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<header>
+	<h1>Highscore</h1>
+</header>	
+        
+<body>
+    <p>
+        Joyclean Putz-Champions
+    </p>
+    <div class="background"> 
+            <div class="results"></div>
+    </div>
+
+    <script>
+        var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", reqListener);
+    oReq.open("GET", "https://scores.bbz.cloud/scores?game=Joyclean");
+    oReq.send();
+
+    var res = document.querySelector('.results');
+
+    function reqListener() {
+    var data = JSON.parse(this.responseText);
+    for(var datum of data) {
+        res.innerHTML += "<b>" + datum.name + "</b> " + datum.score + "<br>"
+    }
+    }
+    </script>
+
+</body>

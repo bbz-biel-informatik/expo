@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a href="start.html"><img class="toplogo" src="pics/Logo.png" alt="Logo"></a>
+
+    <div class="playground">
+
+      <p class="punkte">0</p>
+      <div class="player"></div>
+
+    </div>
+
+    <div id="game-over-screen">
+      Game Over
+      <button id="restart">Restart</button>
+    </div>
+
+    <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+    <script src="Enemy.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

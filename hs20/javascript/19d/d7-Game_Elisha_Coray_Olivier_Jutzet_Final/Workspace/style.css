@@ -1,0 +1,110 @@
+body {
+  background-color: gray;
+}
+.fullscreen {
+  width: 200px;
+  font-size: 30px;
+  background-color: lightblue;
+  border-color: grey;
+  border-width: 8px;
+}
+
+.playground {
+  position: relative;
+  width: 1800px;
+  height: 1000px;
+  background-image: url(/Workspace/Bilder/playground.png);
+  background-size: cover;
+}
+.player {
+  position: absolute;
+  height: 150px;
+  width: auto;
+}
+.end {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  left: 170%;
+  bottom: 0%;
+}
+.enemy1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 60%;
+  left: 120%;
+  height: 10%;
+  width: auto;
+}
+/* bossssssss */
+.enemy2 {
+  position: absolute;
+  bottom: 0%;
+  left: 60%;
+  height: 300px;
+}
+.coin1,
+.coin2,
+.coin3,
+.coin4 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+.coin1 {
+  bottom: 20%;
+  left: 45%;
+}
+.coin2 {
+  bottom: 60%;
+  left: 60%;
+}
+.coin3 {
+  bottom: 40%;
+  left: 120%;
+}
+
+.coin4 {
+  bottom: 70%;
+  left: 80%;
+}
+
+.element1,
+.element2,
+.element3,
+.element4 {
+  position: absolute;
+  height: 30px;
+  width: 100px;
+}
+
+.element1 {
+  top: 80%;
+  left: 30%;
+}
+.element2 {
+  top: 50%;
+  left: 45%;
+}
+.element3 {
+  top: 30%;
+  left: 65%;
+}
+.element4 {
+  bottom: 30%;
+  left: 120%;
+  width: 160px;
+}
+
+
+.punkte {
+  color: lightgreen;
+  font-family: sans-serif;
+  font-size: 50px;
+  width: 50px;
+  margin: 1px;
+  margin-right: 0px;
+  padding: 0%;
+  float: left;
+}

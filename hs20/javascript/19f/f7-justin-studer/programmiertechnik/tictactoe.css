@@ -1,0 +1,47 @@
+body{
+  background-color:#5D599C;
+}
+
+.tic-tac-toe #gameboard {
+  width: 60vmin;
+  height: 60vmin;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top:50px;
+  margin-left: 700px;
+  
+  }
+
+.tic-tac-toe button {
+width:20vmin;
+height: 20vmin;
+background: grey;
+border: 5px solid #5D599C;
+margin: 0;
+font-size: 100px;
+color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+}
+
+.h1{
+  margin-left: 790px;
+  margin-top: 50px;
+  font-size:40px;
+}
+
+.h2{
+  margin-left: 870px;
+}
+
+
+
+
+
+
+ 
+
+  
+  
+  
+ 

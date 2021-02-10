@@ -1,0 +1,139 @@
+.cover{
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    height: 450px;
+    top: 7px;
+    z-index: -1;
+    
+}
+
+.contactxt{
+    margin-left: 80vh;
+    display: inline;
+}
+
+
+label{
+    margin-left: 50px;
+    color: rgb(2, 25, 56);
+   
+}
+
+.kontakt{
+    background-color: rgb(250, 203, 95);
+    width: 45vw;
+    height: fit-content;
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
+p{
+    margin-top: 5%;
+    margin-left: 23%;
+    color: rgb(2, 25, 56);
+}
+
+form{
+    margin-top: auto;
+    padding-top: 4%;
+  
+  
+}
+
+
+input{
+    border-radius: 10%;
+    border-color: rgb(2, 25, 56);
+    width: 500px;
+    padding:20px;
+    margin-bottom: 40px;
+
+}
+
+.submit{
+    background-color: rgb(232, 154, 219);
+    color: white;
+    margin-left: 300px;
+    width: 200px;
+    border-radius: 15%;
+    font-size: 16px;
+    font-weight: bolder;
+
+}
+
+form label input{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#email, #name                 {
+    margin-left: 100px;
+
+
+}
+#nachricht{
+    margin-left: 78px;
+}
+
+@media (max-width: 1024px){
+    a{
+        font-size:5vw;
+
+    }
+    
+    p{
+        margin: 0% 0% 20% 0%;
+        font-size: 12px;
+
+    }
+    
+    .kontakt{
+        padding: 30%;
+        width: 40vw;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        border-radius: 0%;
+    }
+
+    input{
+        border-radius: 20%;
+        border-color: rgb(2, 25, 56);
+        width: 100%;
+        padding:5%;
+        margin: 0px 0px 20px 0px;
+        font-size: 12px;
+
+    
+    }
+
+    .submit{
+        background-color: rgb(232, 154, 219);
+        color: white;
+        width: 100px;
+        border-radius: 20%;
+        font-size: 12px;
+        font-weight: bolder;
+        margin: auto auto auto 20% ;
+    
+    }
+    form{
+        padding: 0px;
+
+    }
+    label{
+        margin: 0px 0px 20px 0px;
+    }
+    
+    #email, #name                 {
+        margin-left: 0px;
+    }
+    #nachricht{
+        margin-left: 0px;
+    }
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shark</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!--Main stylesheet-->
+    <link rel="stylesheet" href="game.css">
+  </head>
+
+  <body>
+
+    <!--Spielauswertung-->
+    <div class="fail">
+      <div class="text">
+        <div class="cash">
+          <img src="img/geld.png" alt="Münze">
+          <p class="failpoints">0</p>
+        </div>
+        <p>Game Over!</p>
+        <p>Du hast leider verloren.</p>
+        <a href="game.html"><img src="img/refresh.svg" alt="Refresh"></img></a>
+      </div>
+    </div>
+
+    <!--Spielfeld-->
+    <div class="playground">
+      <div class="collectpoints">
+        <img src="img/geld.png" alt="Münze">
+        <p class="points">0</p>
+      </div>
+      <img class="fish" src="img/fisch.png" alt="fish">
+    </div>
+
+    <!--Include JavaScript-->
+    <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+    <script src="game.js" charset="utf-8"></script>
+
+  </body>
+</html>

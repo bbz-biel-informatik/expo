@@ -1,0 +1,45 @@
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 0;
+  max-width: 675px;
+  margin: 0 auto;
+}
+
+li {
+  height: 200px;
+  flex-grow: 1;
+}
+@media only screen and (max-width: 700px) {
+  li {
+    height: 180px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  li {
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  li {
+    height: 100px;
+  }
+}
+
+li:last-child {
+  flex-grow: 10;
+}
+
+.image-grid img,
+.image-grid video {
+  box-sizing: border-box;
+
+  height: 100%;
+  vertical-align: bottom;
+}

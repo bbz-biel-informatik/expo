@@ -1,0 +1,140 @@
+.player {
+    position: absolute;    
+    width: 10em;
+    height: 4em;
+    background-image: URL("fotos/taucher.png");
+    background-size: cover;
+    z-index: 100;
+  }
+  
+.hindernis {
+    position: absolute;
+    width: 7em;
+    height: 5em;
+    background-image: URL("fotos/nemo.png");
+    z-index: 10;
+    background-size: cover;
+  }
+
+.abfall {
+    position: absolute;
+    width: 8em;
+    height: 3em;
+    background-image: URL("fotos/pet.png");
+    background-size: cover;
+    transform: scaleX(-1);
+  }
+
+.background {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    background-image: URL("fotos/playground.jpg");
+    overflow: hidden;
+  }
+
+.playground {
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-image: URL("fotos/playground.jpg");
+    overflow: hidden;
+  }
+
+.punktestand {
+    display: flex;
+    justify-content: center;
+  }
+  
+.punkte {
+    color: white;
+    font-size: 10em;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    opacity: 80%;
+  }
+
+.zeitmessung {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+    color: white;
+    font-size: 2em;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    opacity: 80%;
+    margin-right: 1em;
+    margin-bottom: 0;
+
+  }
+
+.results {
+    /*display: flex;
+    justify-content: center;
+    width: 10em;*/
+    z-index: 100;
+    color: white;
+    font-size: 2em;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    margin-top: 2em;
+    margin-left: 15em;
+  }
+
+.fullscreen {
+    background-color: #008CBA;
+    opacity: 100;
+    outline: none;
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 7rem;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    z-index: 10;
+    margin-bottom: 1.5em;
+  }
+
+.fullscreen:hover {
+    background-color: white;
+    color: black;
+  }
+
+.fullscreendiv {
+    display: flex;
+    justify-content: center;
+  }
+  
+header {
+    margin-top: 2em;
+    background-color: white;
+    z-index: 200;
+  }
+
+body {
+    margin: 0%;
+  }
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  color: black;
+  font-size: 2.5em;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: lighter;
+}
+
+p {
+  text-align: center;
+  color: black;
+  font-size: 1em;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: lighter;
+}
+
+
+

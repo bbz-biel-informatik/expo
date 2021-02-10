@@ -1,0 +1,41 @@
+main {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+div.polaroidcontainer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  .polaroidcontainer {
+    font-size: 20px;
+  }
+}
+
+.polaroid img {
+  width: 100%;
+}
+
+.polaroid:nth-child(2) img {
+  height: 40vw;
+  max-height: 390px;
+  width: auto;
+}
+
+div.polaroid {
+  width: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* margin-bottom: 25px; */
+}
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.Introduction {
+  font-family: georgia, "times new roman", times, serif;
+  font-size: 20px;
+}

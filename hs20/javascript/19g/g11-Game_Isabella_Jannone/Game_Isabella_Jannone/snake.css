@@ -1,0 +1,29 @@
+body {
+  background-image: url(img/Garden-Background.png);
+  background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.playground {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    border: 2px solid white;
+  }
+  
+  .player {
+    position: absolute;
+    background-image: url(img/snake.png);
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+  }
+  .apple {
+    position: absolute;
+    background-image: url(img/apple.png);
+  background-size: cover;;
+    width: 25px;
+    height: 28px;
+  }

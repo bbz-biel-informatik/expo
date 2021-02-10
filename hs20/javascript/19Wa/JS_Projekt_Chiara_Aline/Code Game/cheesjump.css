@@ -1,0 +1,208 @@
+/*Spieler & Spielfeld*/
+
+body {
+  margin: 0;
+  overflow:hidden;
+}
+
+.playground {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: URL("img/heidi.jpg");
+  background-size: cover;
+}
+
+.player {
+  position: absolute;
+  top: 50vh;
+  left: 40vw;
+  width: 10vh;
+  height: 10vh;
+}
+
+.player img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Hindernis*/
+.gabel {
+  position: absolute;
+  width: 3vh;
+  height: 30vh;
+  background-image: URL("img/Gabel.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wand {
+  position: absolute;
+  width: 3vh;
+  height: 100%;
+}
+
+.gabel img {
+  width: auto;
+  height: 100%;
+}
+
+/*Gürkli*/
+
+.gurke {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  background-image: URL("img/guerkli.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Punkte*/
+
+.punkte {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  color: white;
+  font-size: 100pt;
+  margin: 0;
+  z-index: 2;
+  font-family: "Pirata One", cursive;
+}
+
+.result {
+  color: darkred;
+  font-size: 100pt;
+  margin: 0;
+  z-index: 2;
+  font-family: "Pirata One", cursive;
+}
+
+/*Startbild*/
+
+#start {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: URL("img/appenzeller.jpg");
+  z-index: 10;
+}
+
+h1 {
+  color: darkred;
+  font-size: 50pt;
+  font-family: "Pirata One", cursive;
+  margin: 0;
+}
+
+#button-start {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  top: 8vw;
+  left: 40vw;
+  width: 40vw;
+  margin-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.spielbeschrieb {
+  color: darkred;
+  font-size: 20pt;
+  font-family: "Padauk", sans-serif;
+}
+
+/*Gameover*/
+
+h2 {
+  color: darkred;
+  font-size: 90pt;
+  font-family: "Pirata One", cursive;
+}
+
+.gameover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-image: URL("img/edelweiss.jpg");
+  display: none;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.again {
+  color: darkred;
+  font-size: 40pt;
+  font-family: "Pirata One", cursive;
+}
+
+/*Bestenliste*/
+
+#bestenliste {
+  color: darkred;
+  font-size: 40pt;
+  font-family: "Pirata One", cursive;
+  margin-top: 3vh;
+}
+
+.liste {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-image: URL("img/edelweiss.jpg");
+  z-index: 1;
+  flex-direction: column;
+}
+
+.bestenliste {
+  height: 30vh;
+  width: 20vw;
+  z-index: 20;
+  margin-bottom: 5vh;
+  background-color: white;
+  color: darkred;
+  font-size: 20pt;
+  font-family: "Padauk", sans-serif;
+  text-transform: lowercase;
+  padding: 1vw;
+  overflow-y: scroll;
+}
+
+h4 {
+  margin: 0 0 5vh 0;
+  color: darkred;
+  font-size: 60pt;
+  font-family: "Pirata One", cursive;
+}
+
+form {
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  color: darkred;
+  font-size: 10pt;
+  font-family: "Padauk", sans-serif;
+  width: 13vw;
+}
+
+.speichern{
+width: 6vw;
+}

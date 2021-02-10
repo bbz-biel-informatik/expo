@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  margin-top: 10px;
+  color: white;
+}
+.playground {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+  padding: 50px;
+  background-image: url("img/playground_background.jpg");
+  background-size: cover;
+  filter: brightness(0.8);
+  filter: contrast(0.8);
+  padding-bottom: 20px;
+}
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Introtext {
+  padding: 10px;
+  font-size: 16px;
+}
+.score {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+}
+.yourScore {
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.punkte {
+  padding-top: 5px;
+}
+.restart {
+  margin: 0 5px 10px 20px;
+  padding: 5px;
+}
+.player {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.obstacle {
+  position: absolute;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.pumpkinorange {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 300px;
+  left: 600px;
+}
+.pumpkinblack {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 500px;
+  left: 300px;
+}

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-image: url("img/background.jpg");
+}
+
+
+
+/* Game, Spielfläche */
+#game {
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 2%;
+    z-index: 30;
+    margin-left: 40%;
+}
+
+img {
+    width: 300px;
+    height: 500px;
+    margin-top: -66.8%;
+}
+
+#henry {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+
+
+
+
+
+
+#auto {
+    width: 100px;
+    height: 100px;
+    animation: silde 0.725s linear infinite;
+    position: relative;
+}
+
+#auto img,
+#henry img {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+}
+
+@keyframes silde {
+    0% {
+        top: -100px;
+    }
+    
+    100% {
+        top: 500px;
+    }
+}
+
+
+
+/* Titel, Punkte & Game-Over */
+
+#counter {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: chocolate;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1%;
+    background-color: #000000;
+    opacity: 80%;
+    visibility: hidden;
+}
+
+
+#gameover {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    font-size: 6rem;
+    justify-content: center;
+    align-items: center;
+    color: chocolate;
+    background-color: #000000;
+    z-index: 100;
+    opacity: 80%;
+    visibility: hidden;
+}
+
+#title {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    font-size: 7rem;
+    justify-content: center;
+    align-items: center;
+    color: chocolate;
+    background-color: #000000;
+    z-index: 100;
+    opacity: 80%;
+}
+
+
+/* Footer, Infotext */
+#info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: chocolate;
+    font-size: 1.2rem;
+    text-align: center;
+    visibility: visible;
+}
+
+#info-text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: chocolate;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: -900px;
+    z-index: 300;
+    top: 10%;
+    visibility: hidden;
+}
+
+
+
+#footer {
+  position: fixed; 
+  left: 0px;
+  bottom: 0px; 
+  height: 8%;
+  width: 100%; 
+  background: #000000;
+  opacity: 0.8;
+}

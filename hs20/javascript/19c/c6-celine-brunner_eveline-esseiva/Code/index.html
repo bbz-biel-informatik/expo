@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+
+
+<body>
+
+    <div class="beschreibung"><h1>Nemo-Game</h1><p><b>Hallo! <br>
+    Ich bin Nemo und ich möchte meinen Freund Dorie so oft wie möglich treffen, hilf mir dem bösen Piranha auszuweichen.</b><br><br>
+Mit der Pfeiltaste nach oben und unten kannst du Nemo durch die Unterwasserwelt bewegen. Versuche solange wie möglich bei Dorie zu bleiben, damit du Punkte bekommst. Falls du aber mit dem bösen Piranha kollisiert, stirbt Nemo, deshalb pass gut auf Nemo auf. <br> 
+<br>Wenn du bereit bist klicke auf Start. Mit der Leertaste kannst du das Spiel erneut starten.</p><button>Start</button></div>
+    <div class="playground">
+      
+        <p class="punkte">0</p>
+        <img class ="herz" src="herz.png">
+        <img class ="nemo" src="nemo.png">
+   
+
+       <p class="gameover">Game over
+           <p class="text">Du hast folgende Punktzahl erreicht: </p>
+        <p class="punktegameover">0</p>
+       </p>
+
+    </div>
+
+    <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

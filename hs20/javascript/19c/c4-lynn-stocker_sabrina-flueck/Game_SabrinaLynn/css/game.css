@@ -1,0 +1,98 @@
+/****** RESET *******/
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: "Raleway", sans-serif;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/****** ROOT *******/
+  body {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .playground {
+  position: relative;shape-margin;
+  width: 875px;
+  height: 550px;
+  border: 1px solid black;
+  margin: auto;
+  background-image: url("town02.png");
+  background-size: 850px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.player {
+  background-image: url("kim.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 160px;
+  height: 220px;
+  background-size: contain;
+}
+
+.stein {
+  background-image: url("geldschein.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-size: contain;
+}
+
+.gegner {
+  background-image: url("paparazzi.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+}
+
+.punkte {
+  font-size: 50px;
+  text-align: center;
+}
+
+.points {
+  font-size: 20px;
+text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.over {
+  visibility: hidden;
+    color: #e06164;
+    padding: 5px;
+    text-align: center;
+    font-size: 50px;
+  background-color: black;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+}
+
+p.info {
+  color: black;
+  position: absolute;
+  font-size: 12px;
+}

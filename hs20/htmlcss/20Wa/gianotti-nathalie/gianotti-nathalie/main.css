@@ -1,0 +1,45 @@
+body {
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+  --green: rgb(105, 199, 105);
+}
+
+nav {
+  margin: 30px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.3em 1em;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--green);
+  line-height: 2em;
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--green);
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  margin-top: 0.3em;
+  margin-bottom: 1.5em;
+}
+
+header h1 {
+  display: table;
+  margin: 0 auto;
+  font-size: 70px;
+  border-bottom: 2px solid black;
+}
+
+.gif {
+  display: block;
+  width: 20vw;
+  max-width: 200px;
+}

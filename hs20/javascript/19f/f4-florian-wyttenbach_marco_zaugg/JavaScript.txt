@@ -1,0 +1,76 @@
+var spieler = document.querySelector('.player')
+var gegner1 = document.querySelector('.enemy1')
+var gegner2 = document.querySelector('.enemy2')
+var gegner3 = document.querySelector('.enemy3')
+var gegner4 = document.querySelector('.enemy4')
+spieler.style.left = '60px'
+spieler.style.top = '0px'
+spieler.style.top = '187px'
+
+ 
+
+var spielfeld = document.querySelector('.playground')
+var backgroundPosition = 0;
+
+ 
+
+var timer = new Timer(60)
+
+ 
+
+var a = 0
+ 
+function loop() {
+
+ 
+var steine = document.querySelectorAll(".stein")
+  // Kommentar: sobald der Spieler mit Gegner1 oder 2 kollidiert, ist das Spiel fertig
+  if(anyCollision(spieler,steine)) {
+    alert("Verkackt du Loser")
+    return
+  }
+  
+    // Kommentar: sobald der Spieler mit Gegner3 oder 4 kollidiert, werden diese gelöscht
+  var collisions = allCollisions(spieler, steine)
+  // Kommentar: wir gehen durch alle Kollisionsobjekte durch und löschen sie
+  for(var collision of collisions) {
+    collision.parentNode.removeChild(collision)
+  }
+
+ for(var stein of steine) {
+    stein.style.left = parseInt(stein.style.left) - 5 + 'px'}
+
+  if(timer.ready()) {
+   
+        var h = document.createElement('div')
+    h.classList.add('stein')
+    h.style.top = 150+Math.random()*30+'px'
+    h.style.left = '900px'
+    spielfeld.appendChild(h)
+  }
+  
+ backgroundPosition = backgroundPosition + 5;
+  spielfeld.style.backgroundPosition = `-${backgroundPosition}px 0`;
+
+ 
+
+ /*if(keyboard(39)) {
+    spieler.style.left = parseInt(spieler.style.left) + 5 + 'px'
+ }
+ if(keyboard(37)) {
+    spieler.style.left = parseInt(spieler.style.left) - 5 + 'px'
+  }*/
+  if(keyboard(32) && a == 0) {
+    a = 15
+  }
+  a = a - 0.8
+  spieler.style.top = parseInt(spieler.style.top) - a + 'px'
+  if(parseInt(spieler.style.top) > 180) {
+       a = 0
+  }
+  window.requestAnimationFrame(loop)
+}
+
+ 
+
+window.requestAnimationFrame(loop)

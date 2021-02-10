@@ -1,0 +1,136 @@
+*{
+font-family: 'Exo 2', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.playground {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 700px;
+  border: 10px solid black;
+  background-image: url('img/background.jpg');
+  background-size: contain;
+}
+
+.player {
+  -webkit-transform: rotate(180deg);
+  position: absolute;
+  background-color: none;
+  width: 60px;
+  height: 60px;
+  z-index: 500;
+}
+
+.shot {
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 10px;
+}
+
+.enemy {
+  position: absolute;
+  background-image: url("img/enemy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 50px;
+  z-index: 50;
+}
+
+.punkte {
+  margin-top: 18px;
+  margin-left: 18px;
+  color: white;
+  font-size: 26px;
+  z-index: 1000;
+}
+
+.anleitung {
+  margin:  244px 20px 20px 20px;
+  color: white;
+}
+
+.button {
+  margin: 196px 0 0 0;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border: 3px solid white;
+  z-index: 1000;
+}
+
+.button:hover {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border: 3px solid black;
+  }
+
+#gameover{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.score{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: white;
+  font-size: 32px;
+  margin: 228px 0 0 0;
+  z-index: 1000;
+}
+
+.punkte{
+  margin-left: 12px;
+  z-index: 1000;
+  position: absolute;
+}
+
+.gameover{
+  margin: 24px 0 0 0;
+  font-size: 20px;
+  color: black;
+  z-index: 1000;
+}
+
+#start{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#start_button {
+  margin: 0 0 0 0;
+}
+
+.punkte2{
+  margin-left: 12px;
+}
+
+.back {
+  position: fixed;
+  margin: 20px;
+  font-size: 20px;
+  color: rgb(95, 95, 95);
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.back:hover{
+  color: black;
+}

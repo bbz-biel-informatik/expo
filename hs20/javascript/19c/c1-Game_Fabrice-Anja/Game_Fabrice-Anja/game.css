@@ -1,0 +1,81 @@
+* {
+  font-family: Helvetica;
+}
+
+.playground {
+  position: relative;
+  width: 500px;
+  height: 650px;
+  border: 2px solid black;
+  background-image: url("Weltall.jpg");
+  background-size: 500px;
+}
+
+.player, .player img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.balken {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  background-color: #953558;
+}
+
+#firstBalken {
+  bottom: 0px;
+  width: 100%;
+}
+
+#displayFlex {
+  margin-top: 30px;
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: space-between;
+}
+
+.score {
+  display: flex;
+
+}
+
+.rules {
+  margin-left: 50px;
+}
+
+h1 {
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+li {
+  font-size: 20px;
+}
+
+.punkte, .score p {
+  margin-top: 100px;
+  margin-left: 20px;
+  font-size: 50px;
+}
+
+.gameOver {
+  z-index: 1;
+  visibility: hidden;
+  position: relative;
+  width: 500px;
+  height: 650px;
+  background-color: #953558;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameOver p {
+  color: white;
+  margin: 0px;
+  font-size: 100px;
+  text-align: center;
+}

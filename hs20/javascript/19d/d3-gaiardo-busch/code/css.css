@@ -1,0 +1,21 @@
+.playground {
+    position: relative;
+    width: 95vw;
+    height: 95vh;
+    border: 1px solid blue;
+    background-image: url(bg.PNG);
+    background-size: contain;
+  }
+
+.player {
+  position: absolute;
+  left: 70px;
+  bottom: 70px;
+  width: 120px;
+  height: 240px;
+  background-image: url(standing2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+
+    

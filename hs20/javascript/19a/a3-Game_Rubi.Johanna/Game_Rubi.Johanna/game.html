@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BBZ game</title>
+    <!--- Stylesheet --->
+    <link rel="stylesheet" href="game.css">
+    <!--- Font --->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;700;800;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <p class="punkte">0</p>
+
+    <div class="playground">
+      <img src="images/eichhörnchen.svg" alt="Eichhörnchen" class="player">
+
+      <div class="container">
+        <div class="feld hidden">
+          <p class="gameover">Game over.</p>
+          <div class="center">
+            <p class="score">Score</p>
+            <p class="highscore">0</p>
+          </div>
+          <img class="restart" src="images/restart.svg" alt="restart">
+        </div>
+      </div>
+
+      <div class="container start-container">
+        <div class="feld start-feld">
+          <img class="start" src="images/starten.svg" alt="start">
+          <a class="start-text" href="#">Start</a>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+    <script src="game.js"></script>
+
+  </body>
+
+</html>

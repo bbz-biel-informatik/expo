@@ -1,0 +1,69 @@
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.playground{
+  position: relative;
+  margin: auto;;
+  width: 500px;
+  height: 700px;
+  border: 10px solid grey;
+  background-image: url(flappy_bird_back.jpg);
+}
+
+.gameover{
+  position: absolute;
+  top: 0;
+  margin: auto;;
+  width: 500px;
+  height: 700px;
+}
+
+.startscreen{
+  position: absolute;
+  top: 0;
+  margin: auto;;
+  width: 500px;
+  height: 700px;
+  z-index: 1;
+}
+
+.player{
+  position: absolute;
+  width: auto;
+  height: 40px;
+}
+
+.steinbottom {
+  position: absolute;
+  width: 30px;
+
+}
+
+.steintop {
+  position: absolute;
+  width: 30px;
+}
+
+.steinhidden {
+  position: absolute;
+  width: 20px;
+  color: red;
+}
+
+.punkte{
+  margin: 20px;
+  position: relative;
+  z-index: 2;
+  font-size: 60px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+
+.final{
+  color: red;
+  font-size: 20px;
+
+}

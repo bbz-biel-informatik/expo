@@ -1,0 +1,43 @@
+body {
+    background-image: url('BG.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameCanvas {
+    top: 20%;
+    position: absolute;
+  }
+
+#score {
+    text-align: center;
+    font-size: 140px;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.ButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  margin-top: 10%;
+  background-color: antiquewhite;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: rgb(241, 208, 165);
+}
+
+h1 {
+  margin-bottom: -5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: antiquewhite;
+}

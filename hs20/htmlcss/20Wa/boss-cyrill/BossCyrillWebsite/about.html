@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="keywords" content="Success, Portfolio, Webprofi">
+    <meta name="description" content="Cyrill Boss, Audio- & Videodienstleistungen in Biel">
+    <meta name="author" content="Cyrill Boss">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Cyrill Boss</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!--responsive reload on window resizing-->
+    <script>
+        window.onload = function () {
+            var h = document.querySelector(".headervideo").clientHeight
+            document.querySelector(".headertext").style.height = h + "px"
+            document.querySelector(".headercontainer").style.height = h + "px"
+
+            if (clientWidth > 730) {
+
+                document.querySelector("#logo").style.display = "flex"
+            } else {
+                document.querySelector("#logo").style.display = "none"
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="headercontainer">
+
+            <!-- Cropped Header Video -->
+            <div id="videoclip">
+                <video class="headervideo" style="width: 100%" preload muted loop autoplay playsinline>
+                    <source src="./Ressources/video.mov" type="video/mp4">
+
+                </video>
+            </div>
+
+            <!-- Page Name -->
+            <div class="andereheadertext">
+                <h1>About</h1>
+            </div>
+
+            <div class="menucontainer">
+
+                <!-- Logo -->
+                <div class="logocontainer">
+                    <img id="logo" src="./Ressources/logo.png" alt="Gemoetrisches Icon">
+                </div>
+
+                <!-- Menu -->
+                <div class="menutext">
+                    <a class="menuitem" href="index.html">Home</a>
+                    <a class="menuitem" href="about.html">About</a>
+                    <a class="menuitem" href="portfolio.html">Portfolio</a>
+                    <a class="menuitem" href="contact.html">Contact</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="anderefirstsection">
+
+        <!-- Transparent Overlay -->
+        <div class="grayoverlay"></div>
+
+        <!-- Table -->
+        <div class="textbox">
+            <h2>&Uuml;ber mich</h2>
+            <table id="cv">
+                <tr>
+                    <td>Ausbildung</td>
+                    <td>2020-2022</td>
+                    <td>Mediamatiker Swisscom</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2013-2019</td>
+                    <td>Kantonsschule Rychenberg, Winterthur</td>
+                </tr>
+
+                <tr>
+                    <td>Zertifikate</td>
+                    <td>2018</td>
+                    <td>Cambridge Advanced Certificate</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2016</td>
+                    <td>ECDL (Microsoft Office)</td>
+                </tr>
+                <tr>
+                    <td>Sprachen</td>
+                    <td>2015-2019</td>
+                    <td>Italienisch (Grundkenntnisse)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2010-2019</td>
+                    <td>Franz&ouml;sisch (Gut)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2008-2019</td>
+                    <td>Englisch (fliessend)</td>
+                </tr>
+                <tr>
+                    <td>Sport</td>
+                    <td>2019</td>
+                    <td>J+S Skileiterkurs</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2010-</td>
+                    <td>Badmintonclub Rorbas-Freienstein</td>
+                </tr>
+                <tr>
+                    <td>Projekte</td>
+                    <td>2020-2021</td>
+                    <td>Multimediateam OSA (Premiere Pro / After Effects)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2018-2019</td>
+                    <td>EP als Maturaarbeit (Audioproduktion, Logic Pro X)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2018</td>
+                    <td>Filmprojekt Bildnerisches Gestalten (Videoschnitt, Final Cut Pro X)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2016-2019</td>
+                    <td>Vorstand/Pr&auml;sidium Schülerorganisation Kantonsschule Rychenberg</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Bewirtschaftung CMS</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Schulmerchandise (Vektordesign, Affinity Designer)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2020</td>
+                    <td>Technische Betreuung eines w&ouml;chentlichen DJ Livestreams</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>(Praktikum Musiklabel)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2020-</td>
+                    <td>1. Projekt OSA Lernendencenter: Vertiefung im Bereich Illustration </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>und Animation (Adobe Illustrator/After Effects)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer Socials -->
+    <div id="socialsbanner">
+
+        <a href="https://facebook.com" target="_blank">
+            <img id="fb" src="./Ressources/fb.png" alt="Facebook Icon">
+        </a>
+        <a href="https://youtube.com" target="_blank">
+            <img id="yt" src="./Ressources/yt.png" alt="YouTube Icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img id="tw" src="./Ressources/tw.png" alt="Twitter Icon">
+        </a>
+        <a href="https://soundcloud.com" target="_blank">
+            <img id="sc" src="./Ressources/sc.png" alt="SoundCloud Icon">
+        </a>
+    </div>
+
+    <script>
+        resize()
+        window.addEventListener("resize", resize)
+
+       function resize() {
+           
+            //Logo On/Off
+            if (clientWidth > 730) {
+                document.querySelector("#logo").style.display = "flex"
+            } else {
+                document.querySelector("#logo").style.display = "none"
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+/****** RESET *******/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  /******Objekte******/
+  .fish {
+    position: absolute;
+  }
+  .shark {
+    position: absolute;
+  }
+  .Stein {
+    position: absolute;
+  }
+  .gras {
+    position: absolute;
+  }
+  .coints {
+    position: absolute;
+  }
+
+  /******Spielfeld******/
+  .playground {
+    background-image:url("img/hintergrund.svg");
+    background-position: 0px bottom;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .playground img{
+    width: 50px;
+  }
+
+  .collectpoints {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+  }
+
+  .points {
+      position: absloute;
+      display: block;
+  }
+
+  /******Spielauswertung******/
+  .fail {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .text {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 30px;
+  }
+
+  .text p{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .text img{
+    width: 30px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .cash{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .cash img{
+    margin: 0px;
+  }
+
+  .cash p{
+    margin-bottom: 0px;
+    margin-left: 5px;
+  }

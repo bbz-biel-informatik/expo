@@ -1,0 +1,327 @@
+body { margin-bottom: 50px }
+a { font-family: 'Montserrat', sans-serif; }
+.container {
+    margin: auto;
+    max-width: 662px;
+    padding: 0;
+}
+
+/* Navigation */
+
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color:#A4A4A4;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+  
+  
+  .header a.logo {
+    position: relative;
+    left: 20%; 
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 28px;
+    color: #000;
+    letter-spacing: 1px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    color: #E85F37;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    color: #E85F37;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+    position: relative;
+    left: -20%; 
+    text-align: right;
+  }
+.intro {
+    width: 100%;
+    height: 100%;
+    padding-top: 500px;
+    background: url(../img/Titelbild-x.jpg) #F7F7F7 center top;
+}
+
+img.img-intro {
+    border-radius: 100px;
+    width: 47px;
+}
+.content { padding-top: 75px }
+.post { margin-bottom: 80px }
+.content .post a { text-decoration: none }
+.content .post h1 {
+    color: #000;
+    font-family:  'Pacifico', cursive;
+    font-size: 28px;
+    font-weight: 400;
+    position: relative;
+}
+
+}
+.content .post p {
+    color: #535353;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.content .post img { margin-bottom: 20px }
+
+.in-content { margin-top: 55px }
+a.read-more {
+    padding: 5px 10px;
+    background-color: #FFF;
+    border: 1px solid #E85F37;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #E85F37;
+    font-size: 13px; 
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+a.read-more:hover {
+	background-color: #E85F37;
+	color: #fff;
+	-webkit-transition: all .25s ease-in-out;
+	   -moz-transition: all .25s ease-in-out;
+	    -ms-transition: all .25s ease-in-out;
+	     -o-transition: all .25s ease-in-out;
+	        transition: all .25s ease-in-out;
+}
+
+
+.foot-post {
+    position: relative;
+    margin-top: 60px;
+    color: #535353;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.foot-post a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #535353;
+}
+.foot-post a:hover {
+	border-bottom: 1px dotted #ccc
+}
+
+}
+/* Footer */
+
+.foot-cp { padding-top: 40px }
+.foot-cp a {
+    color: #A5A5A5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+body {
+	font-family:'Montserrat', sans-serif;
+	font-weight:300;
+	font-size: 15px;
+	line-height:30px;
+  color:#777;
+}
+
+.container {
+	max-width:667px;
+	width:100%;
+	margin:0 auto;
+  position:relative;
+}
+
+
+/* Kontaktformular */
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Montserrat", "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #E85F37
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+    background:#FFF;
+    font-size: 12px;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+  background-color: #FFF;
+  border: 1px solid #E85F37;
+  color: #E85F37;
+  border-radius: 5px;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#E85F37;
+  color: #FFF;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 980px) {
+
+    .intro {
+      padding-top: 200px;
+      background: url(../img/titelbild-small.jpg) #F7F7F7 center top;
+    }
+    .header a {
+      float: none;
+      display: block;
+      text-align: center;
+      margin: auto;
+      left: 0%; 
+    }
+
+    .header a.logo {
+      float: none;
+      display: block;
+      text-align: center;
+      margin: auto;
+      left: 0%;  
+    }
+
+  .header-right {
+      float: none;
+      display: block;
+      text-align: center;
+      margin: auto;
+      left: 0%;
+    }
+    @media (min-width: 980px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: auto;
+        left: 0%;
+        font-size: 50px;
+        padding: 50px;
+      }
+
+      .header a.logo {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: auto;
+        left: 0%;
+        font-size: 50px;
+      }
+      
+    .header-right {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: auto;
+        left: 0%;
+      }
+     
+    }
+

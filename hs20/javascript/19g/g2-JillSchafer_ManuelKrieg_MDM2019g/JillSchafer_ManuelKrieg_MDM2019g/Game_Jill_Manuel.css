@@ -1,0 +1,35 @@
+html, body {
+  font-family: 'Baloo 2', cursive;
+  height: 100%;
+}
+
+.playground {
+  position: relative;
+  width: 760px;
+  height: 92%;
+  padding: 10px;
+  border: 5px solid;
+  background-image: url("coronabackground.jpg");
+}
+
+.player {
+  position: absolute;
+  background-color: #abddfc;
+  width: 160px;
+  height: 20px;
+}
+
+.block {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background-color: #87cefa;
+}
+
+.ball {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #f3faff ;
+  border-radius: 20px;
+}

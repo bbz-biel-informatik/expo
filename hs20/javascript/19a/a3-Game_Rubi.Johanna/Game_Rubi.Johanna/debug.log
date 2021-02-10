@@ -1,0 +1,4 @@
+[1120/104732.109:ERROR:directory_reader_win.cc(43)] FindFirstFile: Das System kann den angegebenen Pfad nicht finden. (0x3)
+[1120/112034.194:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\johan\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\4941aadb-0164-4353-96c5-237e27a4d3b4: Das System kann den angegebenen Pfad nicht finden. (0x3)
+[1204/103738.823:ERROR:directory_reader_win.cc(43)] FindFirstFile: Das System kann den angegebenen Pfad nicht finden. (0x3)
+[1204/110612.984:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\johan\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\382bdd33-a29c-4669-99bb-0bafde03502a: Das System kann den angegebenen Pfad nicht finden. (0x3)

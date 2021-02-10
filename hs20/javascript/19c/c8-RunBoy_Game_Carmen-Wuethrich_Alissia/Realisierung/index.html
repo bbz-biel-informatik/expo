@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+      <meta charset="utf-8" />
+      <title>Run Boy</title>
+      <meta name="description" content="Game Run Boy"/>
+      <meta name="autor" content="Carmen Wüthrich und Alissia Flückiger" />
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="playground">
+      <div class="zeit">0</div>
+      <div class="zeit">Timer:</div>
+      <img src="daten/runboyrun.gif" alt="player" class="player">
+      <button type="button" id="button" onclick="FunctionClick()">Help</button>
+    </div>
+    <div class="textbox">
+      <h1 class="starttext">Run Boy!</h1>
+      <p class="starttext">Versuche möglichst lange durchzuhalten. Viel Glück!</p>
+    </div>    
+  <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+  <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+  <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>

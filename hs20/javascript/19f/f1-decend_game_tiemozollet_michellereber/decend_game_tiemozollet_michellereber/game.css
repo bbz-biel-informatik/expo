@@ -1,0 +1,46 @@
+.player {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 10000;
+}
+
+.player, img {
+  width: 20px;
+  height: 20px;
+}
+
+.playground {
+  width: 400px;
+  height: 400px;
+  background-image: url(./pictures/stars_bg.gif);
+  background-size: contain;
+}
+
+.floor {
+  position: absolute;
+  width: 400px;
+  height: 20px;
+  background-color: white;
+}
+
+.hole {
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background-color: #10121d;
+}
+
+.end {
+  height: 1px;
+  width: 400px;
+  background-color: #10121d;
+}
+
+.punkte {
+  height: 20px;
+}
+
+.init {
+  display: none;
+}

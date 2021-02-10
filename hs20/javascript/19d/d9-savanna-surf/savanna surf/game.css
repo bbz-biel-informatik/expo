@@ -1,0 +1,50 @@
+html, body{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.playground {
+    background-color: rgb(247, 211, 133);
+    background-size: 100%;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img {
+  width: 70px;
+  height: auto;
+  z-index: 9000;
+  position: absolute;
+  left: 1000px;
+  top: 500px;
+}
+
+.oase {
+  position: absolute;
+  width: 330px;
+  height: 200px;
+  background-image: url(oase.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.baum {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url(tree.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.punkte {
+  padding: 20px;
+  color: peru;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+  margin: 0;
+  z-index: 9000;
+}

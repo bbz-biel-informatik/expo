@@ -1,0 +1,310 @@
+@font-face {
+font-family: "Retro-GAming";
+src: url('Retro-Gaming.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.score, .spieler_rot, .spieler_grün {
+  z-index: 1;
+  font-size: 20px;
+  color: #ffff;
+  position: absolute;
+}
+
+.spieler_rot{
+  top: 20px;
+  left: 30px;
+}
+
+.score1 {
+  top: 20px;
+  left: 90px;
+  }
+
+  .spieler_grün{
+    top: 20px;
+    left: 1080px;
+  }
+
+  .score2 {
+    top: 20px;
+    left: 1155px;
+    }
+
+#restartButton {
+  z-index: 1;
+  position: absolute;
+  top: 30px;
+  width: 140px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+button, p {
+  font-family: 'Retro-Gaming', sans-serif;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+#alrt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+b {
+  padding: 100px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 3;
+  font-family: 'Retro-Gaming', sans-serif;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+.playground {
+  position: absolute;
+  box-sizing: border-box;
+  width: 1200px;
+  height: 800px;
+  border: 1px solid blue;
+  background-image: url(Game_Background.jpg);
+}
+
+.player1 {
+  position: absolute;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+}
+
+.player2 {
+  position: absolute;
+  background-color: green;
+  width: 15px;
+  height: 15px;
+}
+
+.boden, .oben, .links, .rechts{
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #050026;
+  border: 1px solid;
+  border-color: white;
+}
+
+ .counter-top, .counter-bottom
+ {
+   position: absolute;
+   box-sizing: border-box;
+   background-color: none;
+ }
+
+
+/* Begrenzung / Vertikalen */
+#a {
+  top: 783px;
+  height: 15px;
+  width: 100%;
+}
+#b {
+  top: 0;
+  left: 1183px;
+  height: 100%;
+  width: 15px;
+}
+#c {
+  top: 0;
+  height: 15px;
+  width: 100%;
+}
+#d {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15px;
+}
+#d1 {
+  top: 490px;
+  left: 500px;
+  height: 250px;
+  width: 15px;
+}
+#d2 {
+  top: 160px;
+  left: 69px;
+  height: 500px;
+  width: 15px;
+}
+#d3 {
+  top: 215px;
+  left: 302px;
+  height: 150px;
+  width: 15px;
+}
+#d4 {
+  top: 350px;
+  left: 200px;
+  height: 200px;
+  width: 15px;
+}
+/* Plattformen */
+#e {
+  top: 710px;
+  left: 950px;
+  height: 15px;
+  width: 200px;
+}
+#f {
+  top: 630px;
+  left: 800px;
+  height: 15px;
+  width: 50px;
+}
+
+#h {
+  top: 580px;
+  left: 920px;
+  height: 15px;
+  width: 50px;
+}
+#i {
+  top: 490px;
+  left: 500px;
+  height: 15px;
+  width: 200px;
+}
+#j {
+  top: 490px;
+  left: 1035px;
+  height: 15px;
+  width: 150px;
+}
+#k {
+  top: 490px;
+  left: 850px;
+  height: 15px;
+  width: 30px;
+}
+#l {
+  top: 640px;
+  left: 1070px;
+  height: 15px;
+  width: 50px;
+}
+#n {
+  top: 440px;
+  left: 420px;
+  height: 15px;
+  width: 70px;
+}
+#p {
+  top: 400px;
+  left: 340px;
+  height: 15px;
+  width: 50px;
+}
+#q {
+  top: 350px;
+  left: 500px;
+  height: 15px;
+  width: 200px;
+}
+#r {
+  top: 350px;
+  left: 1000px;
+  height: 15px;
+  width: 184px;
+}
+#s {
+  top: 350px;
+  left: 830px;
+  height: 15px;
+  width: 20px;
+}
+#t {
+  top: 270px;
+  left: 1100px;
+  height: 15px;
+  width: 84px;
+}
+#u {
+  top: 190px;
+  left: 900px;
+  height: 15px;
+  width: 100px;
+}
+#v {
+  top: 201px;
+  left: 302px;
+  height: 15px;
+  width: 350px;
+}
+#w {
+  top: 300px;
+  left: 83px;
+  height: 15px;
+  width: 185px;
+}
+#x {
+  top: 350px;
+  left: 110px;
+  height: 15px;
+  width: 193px;
+}
+#y {
+  top: 390px;
+  left: 83px;
+  height: 15px;
+  width: 85px;
+}
+#z {
+  top: 430px;
+  left: 100px;
+  height: 15px;
+  width: 101px;
+}
+#aa {
+  top: 470px;
+  left: 83px;
+  height: 15px;
+  width: 85px;
+}
+
+#counter-top {
+  top: 50px;
+  left: 500px;
+  height: 150px;
+  width: 15px;
+}
+
+#counter-bottom {
+  top: 740px;
+  left: 500px;
+  height: 50px;
+  width: 15px;
+}

@@ -1,0 +1,129 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "VT323", monospace;
+}
+
+html,
+body {
+	font-family: arial, sans-serif;
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(24, 24, 24);
+	color: rgb(250, 250, 250);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	position: absolute;
+	color: #736b9a;
+	font-size: 50pt;
+	font-weight: 900;
+}
+
+h2 {
+	font-size: 3rem;
+	margin-bottom: 4vh;
+	padding: 0 200px;
+	color: #d1e264;
+	animation: rainbow 1s infinite;
+}
+
+#playfield {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 100vh;
+	height: 100vh;
+	display: grid;
+
+	grid-template-columns: repeat(30, 1fr);
+	grid-template-rows: repeat(30, 1fr);
+	background-color: none;
+}
+
+.pac-dots {
+	position: absolute;
+	background-color: #fffeff88;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 15%;
+	height: 15%;
+}
+
+#points {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 5rem;
+	margin: 5%;
+	animation: rainbow 1s infinite;
+}
+
+@keyframes rainbow {
+	50% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+#screen {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 101;
+	top: 0%;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+p {
+	padding: 1vh 2vw;
+	font-size: 2rem;
+
+	color: white;
+	border: none;
+	animation: blink 1s infinite;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+
+#turtorial,
+#instructions {
+	pointer-events: none;
+	width: 200px;
+	opacity: 0.3;
+	position: absolute;
+	left: 5vw;
+	top: 45vh;
+}
+#instructions {
+	top: 65vh;
+	left: 3.5vw;
+	width: 350px;
+}

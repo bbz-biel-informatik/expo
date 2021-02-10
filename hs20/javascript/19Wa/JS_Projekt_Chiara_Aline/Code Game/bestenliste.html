@@ -1,0 +1,35 @@
+<head>
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="cheesjump.css" />
+</head>
+
+<body>
+  <div class="liste">
+    <h4>Tröim witer!</h4>
+    <div class="bestenliste"></div>
+    <a href="cheesjump.html"
+      ><button class="again" type="button">No einisch</button></a
+    >
+  </div>
+  <script>
+    /*Anzeige Bestenliste*/
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", reqListener);
+    oReq.open("GET", "https://scores.bbz.cloud/scores?game=Cheesjump");
+    oReq.send();
+
+    var res = document.querySelector(".bestenliste");
+
+    function reqListener() {
+      var data = JSON.parse(this.responseText);
+      for (var datum of data)  {
+        res.innerHTML += "<b>" + datum.name + "</b> " + datum.score + "<br>";
+      }
+    }
+  </script>
+</body>

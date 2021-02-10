@@ -1,0 +1,77 @@
+*{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.playground {
+    position: relative;
+    width: 35vw;
+    height: 80vh;
+    border: 8px solid rgb(0, 58, 82);
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+
+  }
+
+  /*img .BG{
+    height: 100%;
+    width: 50vw;
+    position: absolute;
+  }*/
+
+  .player {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    bottom: 0;
+  } 
+
+
+  
+  .Geschenk{
+    position: absolute;
+    width: 60px;
+    height: auto;
+    left: 40px;
+  }
+
+  .kerze{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    left: 50px;
+    transform: rotate(180deg);
+  }
+    
+  .schwarze-kugel {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    left: 40px;  
+  }
+  
+
+  .goldene-kugel {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    left: 40px;
+  }
+
+  .punkte {
+    font-size: 50pt;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 58, 82);  
+    margin-bottom: 20px ;
+  }
+
+title {
+    font-size: 50pt;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 58, 82);  
+    margin-bottom: 20px ;
+}

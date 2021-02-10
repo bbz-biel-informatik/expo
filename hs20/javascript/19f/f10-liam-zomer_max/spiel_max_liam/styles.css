@@ -1,0 +1,111 @@
+html,body {
+  height: 100%;
+  background-image: url(wand.png);
+  margin: 0;
+  padding: 0;
+}
+
+body  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.playground {
+    position: relative;
+    width: 700px;
+    height: 600px;
+    border: 7px solid rgb(102, 102, 102);
+    background-color: rgb(122, 122, 122);
+    
+
+  }
+
+  .player {
+    position: absolute;
+    width: 99px;
+    height: 100px;
+    
+  }
+
+  .btn  {
+    
+    justify-content: center;
+    width: 70px;
+    height:70px;
+    display: flex;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+  
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .restart  {
+    width: 90px;
+    height: 90px;
+    margin-left: 620px;
+    position: absolute;
+    background-image: url(reload_Icon.png);
+    background-size: contain;
+    background-color: none;
+  }
+
+
+  .red{
+    background-image: url(Dieb_1.png);
+    background-size: contain;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  .blue{
+    background-image: url(polizist_1.png);
+    background-size: contain;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+#punktzahl_polizei  {
+  position: absolute;
+  left: 13%;
+  font-family: "Montserrat", sans-serif;
+}
+
+#punktzahl_dieb {
+  position: absolute;
+  left: 13%;
+  top: 28%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.loeschen {
+  position: absolute;
+  left: 13%;
+  top:40%
+}
+
+.punkte_polizei_text  {
+  position: absolute;
+  left: 13%;
+  top: 18%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.punkte_dieb_text  {
+  position: absolute;
+  left: 13%;
+  top: 25%;
+  font-family: "Montserrat", sans-serif;
+}

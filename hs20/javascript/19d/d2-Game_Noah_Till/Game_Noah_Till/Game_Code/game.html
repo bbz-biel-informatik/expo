@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game_Till_Noah</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="playground">
+
+        <p class="Score">Score:</p>
+        <p class="punkte">0</p>
+        <p class="coincounter"><img class="coincounter" src="../img/coin.png"></p>
+        <p class="münzen">0</p>
+
+
+        <img src="../img/character.png" class="player">
+        <p class="win">You won Congratulations!</p>
+        <input class="restart" type="button" value="Restart" onclick="document.location.reload(true)">
+    </div>
+    <button class="fullscreen">Vollbild</button>
+
+    <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+    <script src="game.js"></script>
+
+
+</body>
+
+</html>

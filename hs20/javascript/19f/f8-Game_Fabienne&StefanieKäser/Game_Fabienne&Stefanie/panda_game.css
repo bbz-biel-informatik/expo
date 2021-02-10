@@ -1,0 +1,54 @@
+.playground {
+  position: relative;
+  width: 400px;
+  height: 400px;;
+  background-color: #42f566;
+  opacity: 70%;
+  margin-top: 50px;
+}
+
+.titel {
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  padding-top: 50px;
+}
+
+.player {
+  position: absolute;
+  background-image: url(img/panda1.png);
+  background-size: contain;
+  top: 50%;
+  left:50%;
+  width: 40px;
+  height: 38px;
+}
+#score {
+   position: absolute;
+   margin-top: 600px;
+}
+.punkte {
+  position: absolute;
+  margin-top: 550px;
+}
+.oel1, .oel2, .oel3, .oel4, .oel5, .oel6 {
+	position: absolute;
+	width: 38px;
+	height: 40px;
+	background-image: url(img/oel&.png);
+	background-size: contain;
+}
+
+.food {
+  position: absolute;
+  width: 39px;
+  height: 40px;
+  background-image: url(img/bambus.png);
+  background-size: contain;
+}
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+  }

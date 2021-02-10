@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+    <title>Flappy Bird</title>
+</head>
+
+<body onload="startGame()">
+<header>
+  <h1>Willkommen im Luftkanal</h1>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style media="screen">
+body {
+  height: 100vh;
+  background-color: #377A98;
+}
+
+
+canvas {
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+p {
+  font-size: 20px;
+  font-weight: regular;
+  color: white;
+  font-family: roboto;
+  margin-left: 20px;
+}
+
+
+#button1 {
+  font-size: 20px;
+  border-radius: 50px;
+  border-color: #377A98;
+  background-color: white;
+  color: #377A98;
+  margin-left: 20px;
+}
+
+
+#button2 {
+  font-size: 20px;
+  border-radius: 50px;
+  border-color: #377A98;
+  background-color: white;
+  color: #377A98;
+  margin-left: 20px;
+}
+
+
+h1 {
+  font-size: 50px;
+  color: white;
+  font-family: roboto;
+  margin: 0px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+//Javascript im HTML, weil es nicht viel Code hat und wir finden, dass es im HTML platz haben darf.//
+var FlappyGamePiece;
+var FlappyScore;
+var FlappyObstacles = [];
+
+
+//Anziege Spielfigur und Score. Muss am Anfang geschrieben sein und nicht am Schluss.//
+function startGame() {
+    FlappyGamePiece = new component(30, 30, "#363636", 10, 120);
+    FlappyGamePiece.gravity = 0.6
+    FlappyScore = new component("20px", "Consolas", "black", 20, 40, "text");
+    FlappyGameArea.start();
+}
+
+
+
+
+
+
+
+
+
+//Figur und Spielgrösse Eintstellung//
+var FlappyGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 1460;
+        this.canvas.height = 430;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.frameNo = 0;
+        this.interval = setInterval(updateGameArea, 8);
+        },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+
+
+
+
+
+
+
+
+//Allg. Angaben zum Spiel//
+function component(width, height, color, x, y, type) {
+    this.type = type;
+    this.score = 0;
+    this.width = width;
+    this.height = height;
+    this.speedX = 0;
+    this.speedY = 0;
+
+
+
+
+
+
+
+
+
+
+//Score Anzeige//
+    this.x = x;
+    this.y = y;
+    this.gravity = 0;
+    this.gravitySpeed = 0;
+    this.update = function() {
+        ctx = FlappyGameArea.context;
+        if (this.type == "text") {
+            ctx.font = this.width + " " + this.height;
+            ctx.fillStyle = color;
+            ctx.fillText(this.text, this.x, this.y);
+        }
+
+
+
+
+
+
+
+
+
+//Anzeige Farbe aller Elemente//
+        else {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+//Spielfigur (Viereck)//
+    this.newPos = function() {
+        this.gravitySpeed += this.gravity;
+        this.x += this.speedX;
+        this.y += this.speedY + this.gravitySpeed;
+        this.hitBottom();
+    }
+    this.hitBottom = function() {
+        var rockbottom = FlappyGameArea.canvas.height - this.height;
+        if (this.y > rockbottom) {
+            this.y = rockbottom;
+            this.gravitySpeed = 0;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+//Konfrontationen Einstellungen//
+    this.crashWith = function(otherobj) {
+        var myleft = this.x;
+        var myright = this.x + (this.width);
+        var mytop = this.y;
+        var mybottom = this.y + (this.height);
+        var otherleft = otherobj.x;
+        var otherright = otherobj.x + (otherobj.width);
+        var othertop = otherobj.y;
+        var otherbottom = otherobj.y + (otherobj.height);
+        var crash = true;
+        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+            crash = false;
+        }
+        return crash;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+//Balken (Hindernisse) Einstellungen und Angaben//
+function updateGameArea() {
+    var x, height, gap, minHeight, maxHeight, minGap, maxGap;
+    for (i = 0; i < FlappyObstacles.length; i += 1) {
+        if (FlappyGamePiece.crashWith(FlappyObstacles[i])) {
+            return;
+        }
+    }
+    FlappyGameArea.clear();
+    FlappyGameArea.frameNo += 1;
+    if (FlappyGameArea.frameNo == 1 || everyinterval(400)) {
+        x = FlappyGameArea.canvas.width;
+        y = FlappyGameArea.canvas.height;
+        minHeight = 10;
+        maxHeight = 200;
+        height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+        minGap = 100;
+        maxGap = 300;
+        gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
+        FlappyObstacles.push(new component(30, height, "#78C59B", x, 0));
+        FlappyObstacles.push(new component(30, x - height - gap, "#78C59B", x, height + gap));
+    }
+
+    for (i = 0; i < FlappyObstacles.length; i += 1) {
+        FlappyObstacles[i].x += -0.9;
+        FlappyObstacles[i].update();
+    }
+    FlappyScore.text="SCORE: " + FlappyGameArea.frameNo;
+    FlappyScore.update();
+    FlappyGamePiece.newPos();
+    FlappyGamePiece.update();
+}
+
+function everyinterval(n) {
+    if ((FlappyGameArea.frameNo / n) % 1 == 0) {return true;}
+    return false;
+}
+
+function accelerate(n) {
+    FlappyGamePiece.gravity = n;
+}
+
+
+
+
+
+
+
+
+
+
+
+//Restart und Luftströmung Button. (Luftströmung mit Audio)//
+var audio = new Audio("Source/audio/air.mp3" ) ;
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+if(count <= 3){
+     this.play();
+  }
+
+audio.onended = function(){
+audio.play();
+}
+</script>
+
+<p>Benutzen Sie LUFTSTRÖMUNG um die Figur durch die Balken zu steuern.</p>
+
+<button onclick="audio.play()" id="button1"onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.07)">LUFTSTRÖMUNG</button>
+<button  id="button2"onmousedown="location.reload();" onmouseup="location.reload(1);">RESTART</button>
+
+  <p>Wie lange können Sie im Luftkanal überleben?</p>
+
+</body>
+</html>

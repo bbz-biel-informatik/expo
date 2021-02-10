@@ -1,0 +1,194 @@
+body, html {
+  height:100%;
+  width: 100%;
+}
+/*Punkte Anzeige*/
+.points{
+  position: top;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Atari Classic Smooth";
+  color:white;
+  font-size: 80px;
+  display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/*Hauptspieler*/
+#player {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+/*Spielertodesanimation1 mit Blut*/
+.playerdead {
+  position: auto;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+/*Spieler läuft nach links gif*/
+#walkleft {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+/*Kleine Ninjas und Fliegen */
+  .fly, .fly2, .ninja {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+/*Ninjas Gross*/
+.ninja2 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+}
+/*Fliegen Gross */
+.fly3 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+} 
+/*Pizzas */
+.pizza{
+  position: absolute; 
+  width: 50px;
+  height: 50px;
+}
+
+/*wolken */
+.wolke,.wolke2{
+  position: absolute; 
+  width: 800px;
+  height: 100px;
+  z-index: 0;
+  display: inline;
+}
+
+ /*Gameover Message box */
+.gameover {
+width: 500px;
+margin-top: 50px;
+display: none;
+}
+/*Start Box */
+.start {
+  height:200px;
+  margin-top: 20px;
+ 
+  }
+.start:hover{
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+  
+/*Steuerung Erklärungs Box */
+.steuerung {
+  width: 600px;
+  margin:auto;
+  margin-top:50px;
+  display: block;
+  z-index: 1;
+  }
+/*Musik eingeschaltet */
+.muteoff {
+    width: 50px;
+    margin-top: auto;
+    margin-left: auto;
+    display: none;
+
+/*Musik ausgeschaltet */   
+    }
+.muteon {
+      width: 50px;
+      margin-top: auto;
+      margin-left: auto;
+      display: none;
+      }
+ /*Try again  text box */
+.try {
+  width: 500px;
+  display: none;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*Ballons am Ende */
+.ballons {
+
+  display:none;
+  background-image: url("../images/Message/win.ai") ;
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-size: 100% 100%;
+    position: relative;
+  z-index: -1;
+  
+    }
+/*Nochmals spielen  text box */
+.try2 {
+  display:none;
+  height: 300px; 
+  width: 1000px;
+  position:absolute;
+  top:200px;
+  left: 500px;
+  z-index: 0;
+}
+.try2:hover{
+  transform: translateY(4px);
+}
+/*Yes Text Box*/
+.yes {
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    display: none;
+    padding-right: 25px;
+}
+.yes:hover {
+  border-bottom: 3px solid green;
+}
+/*No text Box*/
+  .no {
+      height: 55px;
+      width: 150px;
+      margin-top: 7px;
+      margin-right: auto;
+      margin-left: auto;
+      display: none;
+      padding-left: 25px;
+}
+.no:hover {
+  border-bottom: 3px solid green;
+}
+
+  html, body {
+    margin: 0; padding: 0;
+}
+/* Hintergrund*/
+  .playground {
+    background-image: url("../images/Background/BG3.png") ;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 0;
+    overflow:hidden;
+    
+}
+  
+  

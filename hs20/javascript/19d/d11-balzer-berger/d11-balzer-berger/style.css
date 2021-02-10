@@ -1,0 +1,95 @@
+/* Allgemein Hintergrund */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+.playground {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  margin: 10vh 10vw;
+  background-color: #1c1c1c;
+  border: none;
+}
+
+/* Balken */
+.player {
+  position: absolute;
+  width: 10vw;
+  height: 2vh;
+}
+
+/* Ball */
+.ball {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/* Boxen */
+.stein {
+  position: absolute;
+  width: 8vw;
+  height: 5vh;
+}
+
+/* Startbildschirm */
+button {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  animation-duration: 2s;
+  margin-top: -10vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+/* Anzeigen */
+.punktezahl {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 0.5em;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  margin-top: -7.5vh;
+  font-weight: bold;
+}
+
+.highscore {
+  color: white;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  width: 90vw;
+  position: absolute;
+  margin-top: -6vh;
+  font-weight: bold;
+  text-align: right;
+}
+
+.timer {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 0.5em;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  margin-top: -7.5vh;
+  font-weight: bold;
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap');
+
+
+.Container {
+  Display: grid;
+  Grid-template-columns: 20% 20% 40% 20%;
+  grid-template-rows: 150px 80px 1fr 10% 20%;
+
+}
+.Icon{
+  grid-template-columns: 2/3;
+  grid-template-rows: 1/2;
+  justify-self: center;
+  align-self: center;
+  padding-left: 80px;
+
+}
+.Title {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-template-rows: 1/2;
+  justify-self: start;
+  align-self: center;
+  color: #a2b9b7;
+  
+}
+.scrollmenu{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 2/3;
+  justify-self: stretch;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+    background-color: #a2b9b7;
+    overflow: auto;
+    white-space: nowrap;
+}
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: stretch;
+    padding: 14px;
+    text-decoration: none;
+    font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #278d85;
+  }
+
+.Gallerie{
+grid-column-start: 1;
+grid-column-end: 5;
+grid-row-start: 3;
+grid-row-end: 4;
+padding-left: 10%;
+padding-right: 10%;
+align-items: center;
+
+
+
+}
+.Übertitel{
+grid-column-start: 2;
+grid-column-end: 4;
+grid-row-start: 4;
+grid-row-end: 5;
+justify-self: center;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-size: 20px;
+padding-top: 20px;
+color: lightcoral
+}
+.Textfeld{
+grid-column-start: 2;
+grid-column-end: 4;
+grid-row-start: 5;
+grid-row-end: 6;
+justify-self: center;
+font: normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+justify-self: center;
+margin-left: 120px;
+margin-right: 120px;
+margin-top: 10px;
+color: darkslategray 
+}

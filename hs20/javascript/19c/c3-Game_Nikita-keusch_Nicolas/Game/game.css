@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.playground {
+  background-position-y: 0;
+  background-position-x: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("Graphics/landscape.png");
+  background-size: contain;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.punkte {
+  position: absolute;
+  text-align: center;
+  font-size: 10vh;
+  color: white;
+  height: 5vh;
+  width: 2vw;
+  margin-top: 5vh;
+  margin-left: 50vw;
+}
+
+.player {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+
+.score {
+  position: absolute;
+  width: 90px;
+  height: 90vh;
+}
+
+.stein {
+  position: absolute;
+  background-position-y: bottom;
+  background-image: url(Graphics/pipe_down.svg);
+  width: 90px;
+  height: 90vh;
+}
+
+.steinbottom {
+  position: absolute;
+  background-image: url(Graphics/pipe_up.svg);
+  width: 90px;
+  height: 90vh;
+}
+
+.scoreup {
+  position: absolute;
+  width: 1px;
+  height: 90vh;
+}
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.gameovertitle {
+  position: absolute;
+  background-position: center;
+  margin-bottom: 60vh;
+  height: 20vh;
+  width: auto;
+}
+
+.gameover {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 100;
+}
+
+.player-trump {
+  position: absolute;
+  margin-left: 5vw;
+  background-image: url(Graphics/character_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.player-putin {
+  position: absolute;
+  margin-left: 5vw;
+  background-image: url(Graphics/character_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.player-merkel {
+  position: absolute;
+  margin-left: 5vw;
+  background-image: url(Graphics/character_3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.player-biden {
+  position: absolute;
+  margin-left: 5vw;
+  background-image: url(Graphics/character_4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.player-diener {
+  position: absolute;
+  margin-left: 5vw;
+  background-image: url(Graphics/character_5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.player1 {
+  background-image: url(Graphics/character_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+.player2 {
+  background-image: url(Graphics/character_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+.player3 {
+  background-image: url(Graphics/character_3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+.player4 {
+  background-image: url(Graphics/character_4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+.player5 {
+  background-image: url(Graphics/character_5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+}
+
+.none {
+  display: none;
+}
+
+.title {
+  position: absolute;
+  background-position: center;
+  margin-bottom: 60vh;
+  height: 40vh;
+  width: auto;
+}
+
+.refresh-button {
+  border-style: none;
+  background-color: rgba(255, 255, 255, 0.589);
+  height: 50px;
+  width: 150px;
+}

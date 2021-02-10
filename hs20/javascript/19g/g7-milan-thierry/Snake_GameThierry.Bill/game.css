@@ -1,0 +1,105 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  font-family: arial;
+  background: black;
+
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+
+.status {
+  background: black;
+  color: black;
+  width: 210px;
+  height: 20px;
+}
+
+.score {
+  float: right;
+  padding: 0 5px;
+  line-height: 20px;
+  background: white;
+  border: black
+}
+
+
+.hidden {
+  display: none !important;
+}
+.box {
+  background: white;
+  width: 10px;
+  height: 10px;
+}
+
+
+.food {
+  background: #4444ad;
+}
+
+.snake {
+  background: #085;
+}
+
+.start {
+  padding: 40px 50px;
+  width: 240px;
+}
+
+
+.modul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+
+header{
+  color: white;
+}
+
+
+
+.start span {
+  color: BLACK;
+  border: 1px solid;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.snakeTable {
+  width: 210px;
+  height: 230px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.start span:hover {
+  background: white;
+  color: #085;
+}

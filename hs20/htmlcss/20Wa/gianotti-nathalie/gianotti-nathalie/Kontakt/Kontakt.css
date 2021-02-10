@@ -1,0 +1,36 @@
+main {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.ganzeform {
+  margin-top: 80px;
+  display: block;
+  /* justify-content: center; */
+}
+
+.ganzeform textarea {
+  resize: vertical;
+  height: 300px;
+}
+
+.ganzeform input,
+.ganzeform textarea {
+  display: block;
+  padding: 10px;
+  font-family: georgia, "times new roman", times, serif;
+  font-size: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.piktoline {
+  display: block;
+  margin: 20px 0;
+  text-decoration: none;
+  color: black;
+}
+.piktoline img {
+  width: 30px;
+  margin-right: 20px;
+}

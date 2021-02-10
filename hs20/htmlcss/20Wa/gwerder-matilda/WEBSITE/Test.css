@@ -1,0 +1,35 @@
+.proj-grid {
+    display: grid;
+  
+    grid-template-areas:
+      "featured featured mini1"
+      "featured featured mini2";
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  
+  .featured {
+    grid-area: featured;
+    overflow: hidden;
+  }
+  
+  .mini1 {
+    grid-area: mini1;
+  }
+  
+  .mini2 {
+    grid-area: mini2;
+  }
+  
+  img {
+    display: block;
+    height: 100%;
+    width: auto;
+  }
+  <style>
+div {
+  background-image: url('img_girl.jpg');
+}
+</style>

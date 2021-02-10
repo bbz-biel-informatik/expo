@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.playground {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/Hintergrund_Game.jpg);
+    background-size: 100%;
+    font-family: Staatliches;
+
+}
+
+.player {
+    position: absolute;
+    width: auto;
+    height: 270px;
+    margin-left: 60px;
+}
+
+.book {
+        position: absolute;
+        left: 100px;
+        bottom: 0px;
+        height: 60px;
+        width: auto;
+}
+
+.grade {
+        position: absolute;
+        left: 100px;
+        bottom: 0px;
+        width: auto;
+        height: 60px;
+}
+
+.punkte {
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.gameover {
+    display: none;
+    font-family: Staatliches;
+    font-size: 50px;
+    text-align: center;
+    background-color: white;
+    border: solid black 2px;
+    height: 150px;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+
+.totalScore {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.refreshPage {
+    background-color:red;
+    border: none;
+    font-family: Staatliches;
+    font-size: 30px;
+    color: white;
+    padding: 10px 30px 10px 30px ;
+    width: auto;
+    height: 50px;
+    margin-top: 30px;
+
+
+}

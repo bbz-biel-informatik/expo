@@ -1,0 +1,5 @@
+Wie Mario ein Jump and Run. Man rennt vorwärts und muss hindernissen ausweichen.
+
+Unterwegs werden spezial Gegenstände gesammelt die Punkte geben.
+
+Das Ziel ist es allen Hindernissen auszuweichen und am Ziel anzukommen.  Wenn man dazu noch alle Gegenstände gesammelt hat kommt eine special benachrichtigung und Luftballons steigen ind die Luft oder sowas.

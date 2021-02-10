@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="keywords" content="Success, Portfolio, Webprofi">
+    <meta name="description" content="Cyrill Boss, Audio- & Videodienstleistungen in Biel">
+    <meta name="author" content="Cyrill Boss">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Cyrill Boss</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!--responsive reload on window resizing-->
+    <script>
+        window.onload = function() {
+            var h = document.querySelector(".headervideo").clientHeight
+            document.querySelector(".headertext").style.height = h + "px"
+            document.querySelector(".headercontainer").style.height = h + "px"
+
+            if (clientWidth > 730) {
+
+                document.querySelector("#logo").style.display = "flex"
+            } else {
+                document.querySelector("#logo").style.display = "none"
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="headercontainer">
+            <div class="menucontainer" id="menu">
+
+                <!-- Logo -->
+                <div class="logocontainer">
+                    <img id="logo" src="./Ressources/logo.png" alt="Gemoetrisches Icon">
+                </div>
+
+                <!-- Menu -->
+                <div class="menutext">
+                    <a class="menuitem" href="index.html">Home</a>
+                    <a class="menuitem" href="about.html">About</a>
+                    <a class="menuitem" href="portfolio.html">Portfolio</a>
+                    <a class="menuitem" href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <!-- Audio -->
+            <div id="audiocontainer">
+                <audio autoplay loop controls id="playAudio">
+                    <source src="./Ressources/Futurehopused.m4a">
+                </audio>
+            </div>
+
+            <img id="home_portrait" src="./Ressources/portraitCut.png" alt="home_portrait von Cyrill Boss">
+
+            <!-- Video -->
+            <video class="headervideo" preload muted loop autoplay playsinline>
+                <source src="./Ressources/video.mov" type="video/mp4">
+            </video>
+
+            <!-- Headertext -->
+            <div class="headertext">
+                <h1>Ḩ̶̧͎͖͙̩͇̪͈̘̥̠͚͇̥̿̍͝ę̵̨͔̭̯͖̝͕̫̖͉͈̲͉̠̩͆͛́̀͌͒̈̊̂͗̕l̷̨̢͙̻̪͉͍͍̂̑̈̑̀̽̓̈́͊͒͝͝l̷̨̨̥̱̫̭̹̼̲̦̠̱͈̦̮̼̫̈́̌̒̍̿̅͑o̵͙͔̦͖̲͓̠̠̬͔̜͌̌́̑ ̴͙̞̤̱͓͔̙͎̎̌̇̽͑͂̆͠W̶̺̰̜͙͎̟̘̮͕͆̉̎̐̓̂o̴̢̯̼̅́͐̊́̔̋̎̄ṟ̴̾̑̀̏̄̿̆̀͌̐̇̔͝l̷̞͇͉̞̱̝̤̟̫̼͔͑̒ͅď̵͂͌̒̔͋̈́̃͐́͛̈́̿͘̚͝</h1>
+            </div>
+        </div>
+        <div class="firstsection">
+            <div class="grayoverlay"></div>
+            <!-- <img id="bg1" src="./Ressources/annie-spratt-cvGnwSIsbEY-unsplash-clean.png" alt="Scheckiger Hintergrund"> -->
+            <svg width="0" height="0">
+                <defs>
+                    <clipPath id="maske">
+                        <rect width="10000px" height="400px" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <!-- Content -->
+            <div class="textbox">
+                <h2>Herzlich Willkommen auf *einer* ersten Website!</h2>
+                <p>Hier findest du tolle Inhalte wie z.B. ein paar Infos über meine Person und einige meiner Photoshop-Basteleien (yay!)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Socials-->
+    <div id="socialsbanner">
+
+        <a href="https://facebook.com" target="_blank">
+            <img id="fb" src="./Ressources/fb.png" alt="Facebook Icon">
+        </a>
+        <a href="https://youtube.com" target="_blank">
+            <img id="yt" src="./Ressources/yt.png" alt="YouTube Icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img id="tw" src="./Ressources/tw.png" alt="Twitter Icon">
+        </a>
+        <a href="https://soundcloud.com" target="_blank">
+            <img id="sc" src="./Ressources/sc.png" alt="SoundCloud Icon">
+        </a>
+    </div>
+    <script>
+        resize()
+        window.addEventListener("resize", resize)
+
+        function resize() {
+            var h = document.querySelector(".headervideo").clientHeight
+            document.querySelector(".headertext").style.height = h + "px"
+            document.querySelector(".headercontainer").style.height = h + "px"
+            var elem = document.getElementById("menu");
+
+            if (elem.clientWidth > 730) {
+                document.querySelector("#logo").style.display = "flex"
+            } else {
+                document.querySelector("#logo").style.display = "none"
+
+            }
+        }
+
+
+        {
+            var audio_file = new Audio('./Ressources/Futurehopused.m4a')
+            audio_file.addEventListener('timeupdate', function() {
+                var buffer = .44
+                if (this.currentTime > this.duration - buffer) {
+                    this.currentTime = 0
+                    this.play()
+                }
+            });
+
+            /*function resize(){
+                var f = document.querySelector(".firstsection").clientHeight 
+                document.querySelector("#maske").style.height = f + "px"*/
+
+        }
+    </script>
+</body>
+
+</html>

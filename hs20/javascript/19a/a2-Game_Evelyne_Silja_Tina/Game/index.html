@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost</title>
+    <link rel="stylesheet" type="text/css" href="game.css" />
+</head>
+<body>
+    <!-- Titel -->
+    <h1>Ghost</h1>
+    <p class="Introtext">Benutzen Sie die Pfeiltasten und sammeln sie so viele orange Kürbisse wie möglich!</p>
+       
+    <!-- Punktzahl-->
+       <div class="score">
+        <p class="yourScore">Your Score: </p>
+        <p class="punkte"> 0 </p>
+        <!-- Restart -->
+        <input class="restart" type="button" value="Neustart" />
+
+    </div>
+
+    <!-- Spielfeld -->
+    <div class="playground">
+        
+        <!-- Player -->
+        <img src="img/player.svg" class="player">
+
+        <!-- Hindernisse -->
+        <div class="obstacle" id="obstacle1"></div>
+        <div  class="obstacle" id="obstacle2"></div>
+        <div  class="obstacle" id="obstacle3"></div>
+        <div  class="obstacle" id="obstacle4"></div>
+        <div  class="obstacle" id="obstacle5"></div>
+        <div  class="obstacle" id="obstacle6"></div>
+        <div  class="obstacle" id="obstacle7"></div>
+        <div  class="obstacle" id="obstacle8"></div>
+        <div  class="obstacle" id="obstacle9"></div>
+        <div  class="obstacle" id="obstacle10"></div>
+        <!-- oranger Kürbis -->
+        <img src="img/pumpkinorange.svg" class="pumpkin pumpkinorange">
+
+        <!-- schwarzer Kürbis -->
+        <img src="img/pumpkinblack.svg" class="pumpkin pumpkinblack">
+
+        
+      </div>
+    <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+    <script src="game.js"></script>     
+</body>
+
+</html>

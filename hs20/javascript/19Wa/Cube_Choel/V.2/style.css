@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@font-face {
+  font-family: 'ka1';
+  src: url(fonts/ka1.ttf);
+}
+
+@font-face {
+  font-family: 'LLPIXEL3';
+  src: url(fonts/LLPIXEL3.ttf);
+}
+
+.playground {
+  background-color: #011F26;
+  width: 1000px;
+  height: 600px;
+  border-radius: 20px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.player {
+  position: absolute;
+  background-color: cyan;
+  width: 20px;
+  height: 20px;
+}
+
+.stein {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: salmon;
+}
+
+body {
+  background-color: black;
+}
+
+p {
+  color: White;
+  margin: 15px;
+  font-family: 'LLPIXEL3', sans-serif;
+  font-size: 1.3em;
+}
+
+.start {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+}
+
+.startbutton {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'ka1', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: inherit;
+  transition: all 0.3s;
+}
+
+.startbutton:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: yellow;
+}
+
+.logo {
+  margin-top: 18vh;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.toplogo {
+  width: 25vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vh;
+}
+
+.instructions {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 16vh;
+  padding-bottom: 14vw;
+}
+
+#game-over-screen {
+  font-family: 'ka1', sans-serif;
+  position: fixed; top: 40%; left: 0; right: 0;
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  color: white;
+  text-transform: uppercase;
+  font-size: 4em;
+  text-align: center;
+  display: none;
+}
+
+#restart {
+  padding: 1em 2em;
+  cursor: pointer;
+  font-weight: bold;
+}

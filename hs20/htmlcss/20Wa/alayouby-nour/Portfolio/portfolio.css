@@ -1,0 +1,256 @@
+html body{
+margin:0px;
+padding:0px;
+}
+
+html{
+   /* 
+    background-image: url("cover.jpeg"); */   
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(2, 25, 56);
+    
+    
+}
+
+.meinarbeit{
+    margin-top: 350px;
+}
+
+.hidden-thing {
+position: absolute;
+left: 100%;
+width: 50px;
+height: 50px;
+opacity: 0;
+}
+
+body, html {
+    height: 100%;
+  }
+
+.menu{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.coverkontakt{
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    height: 450px;
+    top: 0px;
+    z-index: -1;
+}
+
+.coverarbeit{
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    height: 450px;
+    top: 0px;
+    z-index: -1;
+    margin-bottom: 500px;
+}
+
+.cover{
+    width: 100%;
+    position: absolute;
+    height: 450px;
+    top: 0px;
+    z-index: -1;
+    margin-bottom: 0px;
+}
+
+.second{
+  justify-self: center;
+
+}
+
+a{
+    text-decoration: none white;
+    float: left;
+    overflow: hidden;
+    color: white;
+    text-shadow: 6px 6px 12px whitesmoke;
+    font-weight: bolder;
+    font-size:3vw;
+    font-family: 'Courier New', Courier, monospace;
+    border:white;
+}
+
+a:hover {
+    color:  rgb(230, 194, 39);
+}
+
+.third{
+    justify-self: end;
+    margin-right: 40px;
+
+}
+
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 50%;
+    position: relative;
+    top: 200px;
+    border: 20px;
+    border-style: solid;
+    border-color:  rgb(2, 25, 56);
+}
+
+section{
+    padding-right: 20px;
+}
+
+p{
+    display: inline-block;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgb(13, 2, 75);
+    font-size: 18px;
+    
+}
+
+h2{
+    color: whitesmoke;
+    display: inline;
+    font-size: 28px;
+    font-weight: bold;
+   
+}
+
+.rechtsp{
+    text-align: justify;
+}
+
+.linksp{
+    text-align: justify;
+}
+
+.container {
+    padding: 0px 200px 0px 200px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links{
+    background-color: rgb(250, 203, 95);
+    padding-top: 50px;
+    width:45%;
+    margin-right: 1%;
+    margin-left: 1%;
+
+}
+
+.rechts{
+    background-color: rgb(232, 154, 219);
+    padding-top: 50px;
+    width:45%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+/* in meinarbeit*/
+.rechts2{
+    background-color: rgb(232, 154, 219);
+    padding-top: 50px;
+    width:45%;
+    margin-left: 1%;
+    margin-right: 1%;  
+   
+
+
+}
+
+
+.linksh2{
+margin-left: 37%;
+
+}
+
+.rechtsh2{
+margin-left: 37%;
+
+}
+
+div{
+    margin: 0px;
+}
+
+ @media (max-width: 1024px) {
+    a{
+        font-size:5vw;
+
+    }
+
+    .image{
+        margin-bottom: 20%;
+        width: 35%;
+    
+    }
+
+    .rechts2{
+        margin-top: 1%;
+
+    }
+
+    #linksh2main{
+        margin: 0% 0% 0% 30%;
+    }
+
+    #rechtsh2main{
+        margin: 0% 0% 0% 30%;
+    }
+    
+    .linksh2{
+        margin-left: 42%;
+        
+        }
+        
+    .rechtsh2{
+        margin-left: 42%;
+        
+        }
+
+
+    .container {
+        padding: 80px 0px 0px 0px;
+    } 
+
+    #subcontainer{
+        padding-top: 0%;
+    }
+
+    p{
+        margin-top: 10%;
+
+    }
+    
+    .links, .rechts, .rechts2{
+        width:100%;
+    }}
+
+    @media (max-width: 320px) {
+        h1{
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+    }
+   

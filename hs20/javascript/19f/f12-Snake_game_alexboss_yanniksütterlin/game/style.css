@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mycan{
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+}
+
+body{
+    overflow: hidden;
+    background-color: #288f49;
+}
+
+#restart {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+#restart ul{
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+#restart ul li:first-child{
+    font-size: 5rem;
+    color: red;
+}
+
+.mycan2{
+    -webkit-filter: brightness(0.1);
+    filter: brightness(0.1);
+}

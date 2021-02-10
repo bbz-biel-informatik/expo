@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'snowy_christmas_-_personal_Rg';
+  src: url('snowy_christmas_-_personal_use-webfont.woff2') format('woff2'),
+       url('snowy_christmas_-_personal_use-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'snowy_christmas_-_personal_Rg';
+  padding-bottom: 1vh;
+}
+h2{
+  font-family: 'snowy_christmas_-_personal_Rg';
+  font-size: 10vh;
+  color: darkred;
+  text-align: center;
+}
+
+h3{
+  font-family: 'snowy_christmas_-_personal_Rg';
+  font-size: 5vh;
+  color: darkred;
+  text-align: center;
+  margin-top: 0;
+}
+
+h4{
+  font-family: 'snowy_christmas_-_personal_Rg';
+  font-size: 4vh;
+  color: darkred;
+  margin-top: 0;
+}
+
+.intro{
+  text-align: center;
+  color: black;
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: darkred;
+  border: 2px solid darkred;
+  padding: 0.1vh 3vw;
+  cursor: pointer;
+  font-size: 3vh;
+}
+
+#timer {
+  font-family: 'snowy_christmas_-_personal_Rg';
+  color: white;
+  font-size: 4vh;
+}
+
+#punkte {
+  position: fixed;
+  top: 4vh;
+  left: 2vh;
+  width: 20%;
+  font-family: 'snowy_christmas_-_personal_Rg';
+  color: darkred;
+  font-size: 4vh;
+}
+
+.playground {
+    position: relative;
+    padding-left: 10px;
+    width: 1200px;
+    height: 800px;
+    border: 1px solid blue;
+    background-image: url(landscape.png);
+    background-size: cover;
+  }
+
+.player {
+    position: absolute;
+    text-align: center;
+  }
+  
+  .player img {
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .tree {
+    background-image: url(christmastree.png);
+    width: 80px;
+    height: 125px;
+    background-size: contain; 
+    position: absolute;
+  }
+
+  .tree img {
+    width: 15%;
+  }
+
+  .ball {
+    position: absolute;
+    /* background-color: cornflowerblue; */
+    background-image: url(snowball.png);
+    background-size: contain; 
+    border-radius: 20px;
+    height: 20px;
+    width: 20px; 
+  }
+
+  .present {
+    background-image: url(present.png);
+    width: 40px;
+    height: 40px;
+    background-size: contain; 
+    position: absolute;
+  }
+  
+  #timer {
+    position: fixed;
+    top: 10px;
+    left: 1100px;
+  }
+
+  #start {
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100px;
+  }
+
+  .overlay {
+    background: url(Penguins.png) no-repeat center center fixed; 
+    background-size: cover;
+    color: darkred;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh; 
+
+  }
+
+  body {
+display: flex;
+  }
+
+.highscore {
+  padding-left: 2vw;
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  height: 800px;
+  width: 200px;
+  overflow-y: hidden;
+}
+.highscore p:first-child {
+  color: darkred;
+}
+
+p {
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  margin-left: 20px;
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 12px;
+}

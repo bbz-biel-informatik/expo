@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "Bilder"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Game_Silvan_Steiner_Mattia_Tanner"
+	}
+}

@@ -1,0 +1,108 @@
+.playground {
+  position: relative;
+  width: 500px;
+  height: 90vh;
+  border: 8px solid #ffffff;
+  background-image: url("IMG/BG.jpeg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.player {
+  position: absolute;
+  background-image: url("IMG/camera\ \(1\).png");
+  width: 32px;
+  height: 30px;
+}
+.baumstamm {
+  position: absolute;
+  width: 95px;
+  height: 685px;
+  background-size: contain;
+  background-image: url("IMG/baumstamm.png");
+}
+body {
+  background-color: #333333;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+.title {
+  font-family: "Fugaz One";
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.infos {
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+.scoreboard {
+  font-family: "Fugaz One";
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.score_name1 {
+  font-family: sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.score_name2 {
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+.score_name3 {
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+.score_name4 {
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+.playercam {
+  font-family: "Fugaz One";
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-top: 100px;
+}
+
+.punkte {
+  font-family: "Fugaz One";
+  color: #ffffff;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.leaderboard {
+  width: 50%;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+}
+
+#videoElement {
+  width: 300px;
+  height: 225px;
+  border: 8px solid #ffffff;
+  background-color: #666;
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+h1 {
+    font-size: 25pt;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+h3 {
+    font-size: 15pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+.programmiertechniken {
+    margin-left: 5% !important;
+    color: #ffffff;
+    transition: 1.0s;
+    margin-top: -5vw;
+}
+
+.tilundjoel {
+    margin-left: 30% !important;
+    color: #ffffff;
+    transition: 1.0s;
+}
+
+.instruktion{
+    margin-left: 37% !important;
+    color: #ffffff;
+    transition: 1.0s;
+    font-size: 10px;
+    margin-top: 1vw;
+}
+
+.start {
+    margin-top: 6% !important;
+    color: #ffffff;
+    transition: 1.0s;
+    background-color: #000000;
+    padding: 25px;
+}
+
+.start:hover {
+    margin-top: 6% !important;
+    color: #ffffff;
+    transition: 1.0s;
+    background-color: #00ccff;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.cursor {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}

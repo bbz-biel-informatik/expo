@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+	padding: 0;
+	border: 0}
+
+  body, .flex, .playground, button{
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  outline: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  background-color: lightgreen;
+  font-family: 'Bowlby One SC', cursive;
+}
+
+.flex {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.abfall {
+  position: absolute;
+  background-image: url(icons/illustration_plastic.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 40px;
+}
+
+.buechse {
+  position: absolute;
+  background-image: url(icons/illustration_buechse.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 40px;
+}
+
+.boot {
+  position: absolute;
+  background-image: url(icons/illustration_boat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 100px;
+}
+
+.mensch {
+  position: absolute;
+  background-image: url(icons/illustration_human.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 60px;
+}
+
+.playground {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 70px;
+  align-items: center;
+  width: 950px;
+  height: 700px;
+  border: 20px solid beige;
+  background-color: lightblue;
+}
+
+.player {
+  position: absolute;
+  background-image: url(icons/illustration_player.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 145px;
+  height: 75px;
+}

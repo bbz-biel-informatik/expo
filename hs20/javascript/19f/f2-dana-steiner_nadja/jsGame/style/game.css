@@ -1,0 +1,103 @@
+/* Titel + Punkte */
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50pt;
+    margin: auto;
+}
+
+#showMoney {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    margin: auto; 
+}
+
+/* Startseite + Anleitung */
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    margin: auto;
+    padding: 20px;
+}
+
+#Anleitung{
+    text-align: center;
+    margin: 20px auto;
+    width: 600px;
+    height: 400px;
+    border: black 3px solid;
+    border-radius: 20px;
+}
+
+#start {
+    font-weight: bold;
+    height: 60px;
+    width: 120px;
+    background-color: black; 
+    color: white; 
+    border: 2px solid white;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    margin: auto; 
+    padding: 20px;
+}
+
+
+.game {
+    position: absolute;
+    width: 99%;
+    height: 400px;
+    border-bottom: 3px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Game*/
+.elefant {
+    position: absolute;
+    top: 310px;
+    width: 90px;
+    height: 90px;
+    left: 90px;
+    background-image: url("../img/elefant.png");
+    background-size: 90px 90px;
+}
+
+.flower {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background-image: url("../img/flower.png");
+    background-size: 30px 40px;
+}
+.money {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/money.png");
+    background-size: 35px 35px;
+}
+
+/* Game Over */
+#gameover{
+    text-align: center;
+    margin: 20px auto;
+    width: 600px;
+    height: 300px;
+    border: black 3px solid;
+    border-radius: 20px;
+}
+
+#play {
+    font-weight: bold;
+    height: 60px;
+    width: 150px;
+    background-color: black; 
+    color: white; 
+    border: 2px solid white;
+    margin-left: 20px;
+}

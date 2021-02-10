@@ -1,0 +1,52 @@
+<head>
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Padauk&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="cheesjump.css" />
+</head>
+
+<body>
+  <div class="playground">
+      
+<!--Start-->
+    <div id="start">
+      <div id="button-start">
+        <h1>Woschs versuechä?</h1>
+        <p class="spielbeschrieb">
+          Ds Ziu isch das de Gable uswichsch und müglechscht viu Gürkli
+          sammlisch. Stüüre chasch mit de Pfiutaste.
+        </p>
+      </div>
+    </div>
+    
+<!--Player-->
+    <div class="player"><img src="img/Cheese.png" /></div>
+    <p class="punkte">0</p>
+
+<!-- GameOver-->
+    <div class="gameover">
+        <p class="result">0</p>
+        <h2>Schaffseckäl</h2>
+        <button type="button" class="again">No einisch</button>
+        <a href="bestenliste.html">
+            <button type="button" id="bestenliste">
+            Hesch z Gfüuh du ghörsch zu dä bestä?
+            </button>
+        </a>
+    </div>
+  </div>
+
+<!--JavaScript-->
+  <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+  <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+  <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+  <script src="cheesjump.js"></script>
+</body>

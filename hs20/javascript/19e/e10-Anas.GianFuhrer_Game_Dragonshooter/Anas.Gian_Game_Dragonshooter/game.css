@@ -1,0 +1,9 @@
+.enemy {
+    width: 50%;
+    height: 5000px;
+}
+
+#mycanvas {
+    border: 5px solid black;
+    background: url("Images/bg2.jpg");
+}

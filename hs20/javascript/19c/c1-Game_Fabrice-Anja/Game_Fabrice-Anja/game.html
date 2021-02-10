@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div id="displayFlex">
+    <div class="playground">
+      <div class="player">
+        <img src="Planet.png" alt="Planet">
+      </div>
+      <div class="balken" id="firstBalken"></div>
+      <div class="gameOver">
+        <p>Game Over</p>
+      </div>
+    </div>
+    <div class="rules">
+      <h1>Regeln</h1>
+      <p>
+        <ul>
+          <li>Sprung mit Leertaste (kann lange gedrückt werden)</li>
+          <li>Links- Rechts-Steuerung mit den Pfeiltasten</li>
+          <li>Berühre den Rand nicht</li>
+          <li>Sicherheitsbalken verschwindet nach dem ersten Sprung</li>
+          <li>Bei jedem Sprung erhälst du Punkte</li>
+          <li>Um nach dem Game over neu zu beginnen, aktuallisiere die Seite (Ctrl+R)</li>
+        </ul>
+      </p>
+      <div class="score">
+        <p>Score:</p>
+        <p class="punkte">0</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+  <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+  <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>

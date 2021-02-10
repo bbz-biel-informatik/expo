@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="overlay">
+      <h1>GAME OVER!</h1>
+      <h6 class="yourtime"></h6>
+
+      <button type="button" class="restart" onclick="restart()">Restart</button>
+      <div class="black"></div>
+    </div>
+    <div class="playground">
+
+        <div class="counter"><label id="minutes">00</label>:<label id="seconds">00</label></div>
+
+        <div class="player">
+            <img src="Bilder/Astronaut.png" alt="player">
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+    <script src="game.js" class="script"></script>
+</body>
+
+</html>

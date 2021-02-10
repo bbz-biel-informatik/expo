@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'minecraft';
+  src: url('fonts/1_Minecraft-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+#edition, #points{
+  position:absolute;
+  top: 2vh;
+}
+
+#edition {
+  right:2vw;
+}
+
+#points {
+  left:2vw;
+}
+
+*{
+  font-family: 'minecraft';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.start{
+  font-size: 24pt;
+  padding: 10px;
+  border-width: 4px;
+  border-radius: 0px;
+  background-color: rgb(185, 209, 200);
+  border-color: rgb(78, 78, 78);
+  z-index: 11;
+}
+.start:hover{
+  padding: 8px;
+  font-size: 22pt;
+  background-color: rgb(46, 241, 134);
+  border-width: 5px;
+  border-color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-size: 10vh;
+  z-index: 11;
+  color: rgb(31, 168, 93);
+}
+
+.title {
+  color:rgb(31, 168, 93);
+  font-size: 2vh;
+  text-align: center;
+}
+
+#title{
+  padding:25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 10;
+  background-image: url("img/title.png");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+.playground {
+  align-self: center;
+   margin-top: 5vh;
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid white;
+    background-image: url("img/enviroment.png");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  
+  .player {
+    position: absolute;
+    background-color: transparent;
+    width: 64px;
+    height: 128px;
+    z-index: 0;
+  }
+#arrow{
+  z-index: 10;
+}
+
+/* Shoot*/
+
+/* .shoot {
+  height:3px;
+  width: 3px;
+  background-color: black;
+} */
+
+
+.shot {
+  position: absolute;
+  background-color: #18c9ff;
+  width: 10px;
+  height: 10px;
+}
+
+  /* Googlie */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow: hidden;
+   /* just used to stop the scrollbar freaking out as the element turns */
+    min-height: 100vh;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+  }
+
+  #pointer-container {
+    margin: 3rem;
+    margin-bottom: 0;
+  }
+  
+  #pointer {
+    width: 25%;
+    height: auto;
+    transform-origin: center 59%;
+    display: block;
+    margin: 0 auto;
+    touch-action: none;
+  }
+
+  .enemy {
+    position: absolute;
+    background-image: url("img/drone.png");
+  background-color: transparent !important; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+    width: 64px !important;
+    height: 64px !important;
+  }
+  .explosion {
+    position: absolute;
+    background-image: url("img/explosion.gif");
+  background-color: transparent !important; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+
+
+  #healthbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #d8d8d8;
+  }
+
+  #heart_1,   #heart_2,   #heart_3,   #heart_4,   #heart_5,   #heart_6 {
+    height: 90%;
+    width:auto;
+  }
+
+  .heart {
+    background-image: url("img/heart.png");
+    position: absolute;
+  }
+

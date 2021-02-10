@@ -1,0 +1,139 @@
+
+body{
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+.playground {
+    position: relative;
+    width: 845px;
+    height: 600px;
+    background-image: url(Hintergrund.jpg);
+    background-size: contain;
+    overflow-x: hidden;
+    margin-top: 10%;
+  }
+
+
+.beschreibung{
+  position: absolute;
+  width: 845px;
+  height: 600px;
+  background-image: url(Start.jpg);
+  background-size: contain;
+  margin-top: 10%;
+  z-index: 20;
+}
+  
+
+.beschreibung p{
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.beschreibung h1{
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+.beschreibung button{
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 375px;
+  margin-right: 370px;
+  width: 100px;
+}
+
+.piranha {
+  position: absolute;
+  height: 5%; 
+  width: auto;
+}
+
+.gameover{
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 45px;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  padding-top: 5%;
+  top: 35%;
+  padding-bottom: 15%;
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+ 
+.nemo {
+  position: absolute;
+  height: 7.5%;
+  width: auto;
+  z-index: 1;
+}
+
+.dorie {
+  position: absolute;
+  height: 5%;
+  width: auto;
+  z-index: 1;
+}
+
+.punkte{
+  font-family: "montserrat";
+  font-weight: bold;
+  font-size: 12pt;
+  color: white;
+  position: absolute;
+  width: 7.5%;
+  text-align: center;
+  margin: 5%;
+  margin-top: 7.5%;
+  z-index: 10;
+}
+
+.punktegameover{
+  font-family: 'VT323', monospace;
+  font-size: 20pt;
+  color: white;
+  position: absolute;
+  width: 10%;
+  text-align: center;
+  margin: 5%;
+  margin-top: 7.5%;
+  z-index: 12;
+  display: none;
+  top: 55%;
+  left: 60%;
+}
+
+.text{
+  font-family: 'VT323', monospace;
+  font-size: 20pt;
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin: 5%;
+  margin-left: 20%;
+  margin-top: 7.5%;
+  z-index: 12;
+  display: none;
+  top: 55%;
+}
+
+
+.herz{
+  width: 7.5%;
+  position: relative;
+  text-align: center;
+  margin: 5%;
+}
+
+
+
+
+ 

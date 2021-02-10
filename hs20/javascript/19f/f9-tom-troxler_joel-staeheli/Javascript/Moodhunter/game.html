@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moodhunter</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <h1 class="title">MOODHUNTER</h1>
+        <p class="infos">
+          welcome to the game <br />
+          move the camera in between the trunks to <br />
+          catch the mood by touching the spacebar. <br />
+          watch the result in the scoreboard
+        </p>
+        <p class="punkte">0</p>
+      </div>
+
+      <div class="center">
+        <div class="playground">
+          <div class="player"></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h2 class="scoreboard">SCOREBOARD</h2>
+        <div class="leaderboard"></div>
+        <h2 class="playercam">PLAYERCAM</h2>
+        <video autoplay="true" id="videoElement"></video>
+      </div>
+    </main>
+
+    <script src="https://game.bbz.cloud/scripts/v1/keyboard.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/timer.js"></script>
+    <script src="https://game.bbz.cloud/scripts/v1/collision.js"></script>
+
+    <script src="game.js"></script>
+  </body>
+</html>

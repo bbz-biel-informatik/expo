@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathalie Gianotti / Kontakt</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="./Kontakt.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nathalie Gianotti</h1>
+      <p>👩‍💻 Mediamatikerin Way-Up 👩‍💻</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/Meine-Arbeit/">Meine Arbeit</a>
+        <a href="/Kontakt/" class="active">
+          Kontakt
+          <img
+            class="gif"
+            src="/Mario_Pflanze.gif"
+            alt="Super Mario's Pflanze wächst nach oben"
+          />
+        </a>
+      </nav>
+    </header>
+    <main>
+      <a
+        class="piktoline"
+        href="https://www.google.com/maps/place/Zurigo,+Svizzera/@47.3773697,8.3966319,11z/data=!3m1!4b1!4m5!3m4!1s0x47900b9749bea219:0xe66e8df1e71fdc03!8m2!3d47.3768866!4d8.541694"
+        ><img src="./img/geschaeft.jpg" /> Zürich</a
+      >
+      <a class="piktoline" href="tel:0784045647"
+        ><img src="./img/iphone.jpg" /> 0784045647</a
+      >
+      <a class="piktoline" href="https://twitter.com/Nathali43013459"
+        ><img src="./img/twitter.jpg" /> Twitter</a
+      >
+      <a
+        class="piktoline"
+        href="https://www.linkedin.com/in/nathalie-gianotti-130b60181/"
+        ><img src="./img/linkedin.jpg" /> LinkedIn</a
+      >
+      <div class="ganzeform">
+        <p>Kontaktformular</p>
+        <form
+          action="https://mailthis.to/Nathalie"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input type="text" name="name" placeholder="Dein Name" />
+          <input type="email" name="_replyto" placeholder="Deine Email" />
+          <input type="text" name="_subject" placeholder="Betreff" />
+          <textarea name="message" placeholder="Nachricht"></textarea>
+
+          <input type="submit" value="Senden" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
